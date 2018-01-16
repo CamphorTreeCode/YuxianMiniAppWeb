@@ -1,0 +1,81 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.7.2",
+	"appid": "wx7264118368e9a2b4",
+	"projectname": "newWxDemo",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": 0,
+					"name": "微任务",
+					"pathName": "pages/index/wre/wre",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "日志编译",
+					"pathName": "pages/logs/logs",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "我的任务",
+					"pathName": "pages/index/wre/myTask/myTask",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "任务详情",
+					"pathName": "pages/taskDetails/taskDetails",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "任务提交",
+					"pathName": "pages/taskDetails/taskCommit/taskCommit",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "门店招聘",
+					"pathName": "pages/index/storeRecruit/storeRecruit",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "日结传手",
+					"pathName": "pages/index/DaySettlement/Settlement",
+					"query": ""
+				}
+			]
+		}
+	}
+}

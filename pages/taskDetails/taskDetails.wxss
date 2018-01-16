@@ -1,0 +1,169 @@
+/* pages/taskDetails/taskDetails.wxss */
+@import "/wxParse/wxParse.wxss";
+page {
+  background: #E4E1E0;
+}
+
+.shopImgTop{
+height:400rpx;
+overflow:hidden;
+
+}
+.shopImgTop image{
+  width: 100%;
+  height:100%;
+}
+.taskPrice{
+
+  height: 105rpx;
+
+background:#fff;
+
+}
+.taskPriceLogo{
+  height: 100%;
+  width:13%;
+  margin-left:6%;
+
+}
+.taskPriceLogo image{
+width:85%;
+height:80%;
+
+margin-top:10%;
+
+
+}
+.price{
+
+  height: 100%;
+  color: #FFD95E;
+  font-size: 1.2rem;
+  line-height:105rpx;
+
+}
+.SurplusNumber{
+
+  height: 100%;
+  width: 25%;
+  color: #929292;
+  font-size: .8rem;
+  line-height: 105rpx;
+}
+.taskDetailsList{
+  margin-top: 3rpx;
+  
+  height: 165rpx;
+  background: #fff;
+  margin-bottom:1.5%;
+
+}
+.taskDetailsListItem{
+
+width:39%;
+
+
+
+  height: 100%;
+}
+.taskdetailsListItemLogo {
+ 
+height:32%;
+
+}
+.taskListLogo{
+
+height:100%;
+width:20%;
+text-align:center;
+
+
+}
+ .taskListLogo image{
+width:71%;
+height:70%;
+
+
+
+}.taskdetailsListItemText{
+width:65%;
+font-size:0.8rem;
+color:#898989;
+margin-top:-0.5%;
+
+
+margin-left:4%;
+
+}
+.taskOne{
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+.detalisOne{
+  margin-left:17%;
+
+}
+.textTop{
+  margin-top: 1%;
+}
+.textBottom{
+  margin-bottom: 1.5%;
+}
+.stepimg{
+  width:100% ;
+  height: 100%
+}
+.taskContentText{
+background: #fff;
+margin-top:1px;
+color: #9D9D9D;
+font-size: 0.8rem;
+padding:3%;
+
+}
+.menuTask{
+  height: 140rpx;
+
+    position: fixed;
+  bottom: 0;
+  width: 100%;
+ background: #fff;
+}
+.TaskCommit{
+
+
+  width: 73%;
+  height: 80%;
+  text-align:center;
+  line-height: 112rpx;
+  background: #FFD95E;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-top:14rpx;
+  margin-left:2.5%;
+}
+.shareTask{
+
+ /* width: 18%;
+ height: 80%;
+ margin-top:14rpx;
+ margin-right: 2.5%; */
+ width:82%;
+height:112rpx;
+line-height:112rpx;
+
+margin-top:14rpx;
+margin-right:2.5%;
+color:#fff;
+background:#F9BF04;
+border:0px;
+border-radius: 0px;
+ /* background:url("/img/taskDetailsImg/shareButtom.png"); */
+}
+button::after{
+border: none;
+}
+/* .shareTask image{
+  width: 100%;
+  height: 100%;
+} */

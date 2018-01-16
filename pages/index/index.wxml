@@ -1,0 +1,196 @@
+<!--index.wxml-->
+<view class="app">
+  <!--头部搜索  start -->
+  <view class="top_l">
+    <view class="address lf">
+      <text>上海</text>
+    </view>
+
+    <input class="findInput lf" placeholder="搜索你喜欢的职位" placeholder-style="color:#fff;padding-left:40px"></input>
+
+  </view>
+  <!--头部搜索  end -->
+  <!--轮播图 start  -->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" indicator-active-color="#fff">
+    <block wx:for="{{movies}}" wx:for-index="index">
+      <swiper-item>
+        <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--轮播图 end  -->
+  <!--中间的部分 start  -->
+  <view class="Middle">
+    <view class="fourFunction">
+      <view class="lf funitme">
+        <image src="/img/pageLogo1.png"></image>
+        <view class="cqcs">长期传手</view>
+      </view>
+      <view class="lf funitme">
+        <image src="/img/pageLogo1.png"></image>
+        <view class="cqcs">日结传手</view>
+      </view>
+      <view class="lf funitme">
+        <image src="/img/pageLogo1.png"></image>
+        <view class="cqcs">碎片时间</view>
+      </view>
+      <view class="lf funitme">
+        <image src="/img/pageLogo4.png"></image>
+        <view class="cqcs">校园实习</view>
+      </view>
+    </view>
+
+
+    <view class="threeFunction">
+      <view class="lf threeitme" bindtap='microtask'>
+        <view class="wrw">微任务</view>
+        <view class="wdztj">微店主推荐</view>
+        <view class="zjnzq">在家能赚钱</view>
+        <image src="/img/wzp.png"></image>
+      </view>
+      <view class="lf threeitme thrPadding zsx">
+        <view class="wrw">找实习</view>
+        <view class="hdwdqy">好单位大企业</view>
+
+        <image src="/img/qyzp.png"></image>
+      </view>
+      <view class="lf threeitme thrPadding" bindtap='storeRecruit'>
+        <view class="wrw">门店招聘</view>
+        <view class="wdztj">微店主推荐</view>
+        <view class="zjnzq">在家能赚钱</view>
+        <image src="/img/wzp.png"></image>
+      </view>
+    </view>
+  </view>
+  <!--中间的部分 end  -->
+
+  <!--底部的部分 start  -->
+  <view class="bottom">
+    <view class="jinri">
+      <text>今日推荐</text>
+    </view>
+  </view>
+  <view class="content">
+    <!--每个商品的信息  strat-->
+    <view class="contentBody">
+
+      <view class="contentItem">
+        <view class="itemLeft lf">
+
+          <view class="companyLogo">
+            <image src="/img/gslogo.png"></image>
+          </view>
+          <view class="companyName">
+            上海传手信息有限公司
+          </view>
+
+        </view>
+        <view class="itemRight lf">
+          <view class="itemRinghtBody">
+            <view class="itemRinghtThree">
+              <view class="GCTilte ">
+                <view class="gcpd lf">广场派单</view>
+                <view class="addressGC lf ">闵行区</view>
+
+              </view>
+
+              <view class="GCaddress">
+                上海市松江区广富林路松讲万达广场
+              </view>
+
+              <view class="shopPrice ">
+
+                <view class="shopInformation lf">认证</view>
+                <view class="shopInformation lf">5天</view>
+                <view class="shopInformation lf">4人</view>
+                <view class="yuan lf">¥</view>
+                <view class="price lf">750</view>
+              </view>
+
+
+            </view>
+            <view class="distance ">
+              <view class="distanceNumber lf">距离我4.78KM</view>
+              <view class="join ri">我要报名></view>
+            </view>
+          </view>
+
+          <view class="Half">
+          </view>
+          <view class="Template">
+          </view>
+        </view>
+        <view class="stateLable">
+          <view class="lableLef lf"></view>
+          <view class="lableCenter lf">
+            派单</view>
+          <view class="lableRight lf"></view>
+        </view>
+      </view>
+
+    </view>
+    <!--每个商品的信息  end-->
+    <!--每个商品的信息  strat-->
+    <view class="contentBody">
+
+      <view class="contentItem">
+        <view class="itemLeft lf">
+
+          <view class="companyLogo">
+            <image src="/img/gslogo.png"></image>
+          </view>
+          <view class="companyName">
+            上海传手信息有限公司
+          </view>
+
+        </view>
+        <view class="itemRight lf">
+          <view class="itemRinghtBody">
+            <view class="itemRinghtThree">
+              <view class="GCTilte ">
+                <view class="gcpd lf">广场派单</view>
+                <view class="addressGC lf ">闵行区</view>
+
+              </view>
+
+              <view class="GCaddress">
+                上海市松江区广富林路松讲万达广场
+              </view>
+
+              <view class="shopPrice ">
+
+                <view class="shopInformation lf">认证</view>
+                <view class="shopInformation lf">5天</view>
+                <view class="shopInformation lf">4人</view>
+                <view class="yuan lf">¥</view>
+                <view class="price lf">750</view>
+              </view>
+
+
+            </view>
+            <view class="distance ">
+              <view class="distanceNumber lf">距离我4.78KM</view>
+              <view class="join ri">我要报名></view>
+            </view>
+          </view>
+
+          <view class="Half">
+          </view>
+          <view class="Template">
+          </view>
+        </view>
+        <view class="stateLable">
+          <view class="lableLef lf"></view>
+          <view class="lableCenter lf">
+            派单</view>
+          <view class="lableRight lf"></view>
+        </view>
+      </view>
+
+    </view>
+    <!--每个商品的信息  end-->
+
+
+  </view>
+  <!--底部的部分 end  -->
+</view>

@@ -1,0 +1,147 @@
+<!--pages/wre/wre.wxml 微任务-->
+<!--分类 start  -->
+<view class="select ">
+  <view id="allType" class="AllType {{shownavindex == 1? 'active' : ''}} lf" bindtap='Type' data-nav="1">{{alltypeStr}}
+    <view class="icon"></view>
+  </view>
+  <view id="newTask  cl" class="newTask {{shownavindex == 2? 'active' : ''}} lf" bindtap="newTask" data-nav="2">{{newtaskStr}}
+    <view class="icon"></view>
+  </view>
+</view>
+<view class='myTask' bindtap="myTask">我的任务</view>
+<!--分类 end  -->
+<!--任务列表  strart-->
+  <!--选择显示 strat  -->
+  <view class="selectTask {{typeFlag ? 'slidown' : 'slidup'}} {{showtypeFlag?'selectShow':''}}" data-city="{{typeFlag}}">
+    <view class="selctTaskList {{index==selectAllIndex?'stl':''}}"  wx:for="{{taskList}}" bindtap="selectAllTaskList" data-task='{{index}}' data-name='{{item}}' wx:key="unique">{{item}}</view>
+  </view>
+  <!--选择显示 end  -->
+    <!--最新任务显示 strat  -->
+  <view class="newtasks {{newTaskFlag ? 'slidown' : 'slidup'}} {{newtaskShow?'selectShow':''}}"data-city="{{newTaskFlag}}">
+    <view class="selctTaskList {{index==selectIndex?'stl':''}}"  wx:for="{{newtaskList}}" bindtap="selectNewTaskList"  data-name='{{item}}' data-task='{{index}}' wx:key="unique">{{item}}</view>
+   
+  </view>
+   <!-- <view class="selctTaskListAll" style="height:345px ;background:#B2B2B2"></view> -->
+  <!--最新任务显示 end  -->
+<view class="wrwBody">
+  <scroll-view scroll-y style="height:{{100-8.4}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" >
+  <view class="taskItem" bindtap='taskDetails'>
+    <view class="itemLeft lf">
+      <image src="/img/wrwImg/gslogo.png"></image>
+    </view>
+    <view class="itemRight lf">
+      <view class="shopTitle">
+        【微信】分享到朋友圈-贝店英吉利DHA鱼肉蔬菜小米粉
+      </view>
+      <view class="shareNumber">
+        分享人数10700
+      </view>
+      <view class="price">
+        <view class="shopLable lf">贝店</view>
+        <view class="shopLable lf">5000份</view>
+        <view class="yuan lf">¥</view>
+        <view class="priceNumber lf">1.5</view>
+        <view class="join ri">报名分享></view>
+      </view>
+    </view>
+    <view class="line cl"></view>
+          <view class="stateLable">
+          <view class="lableLef lf"></view>
+          <view class="lableCenter lf">
+           分享</view>
+          <view class="lableRight lf"></view>
+        </view>
+  </view>
+
+  <view class="taskItem">
+    <view class="itemLeft lf">
+      <image src="/img/wrwImg/gslogo.png"></image>
+    </view>
+    <view class="itemRight lf">
+      <view class="shopTitle">
+        【微信】分享到朋友圈-贝店英吉利DHA鱼肉蔬菜小米粉
+      </view>
+      <view class="shareNumber">
+        分享人数10700
+      </view>
+      <view class="price">
+        <view class="shopLable lf">贝店</view>
+        <view class="shopLable lf">5000份</view>
+        <view class="yuan lf">¥</view>
+        <view class="priceNumber lf">1.5</view>
+        <view class="join ri">报名分享></view>
+      </view>
+    </view>
+    <view class="line cl"></view>
+  </view>
+
+  <view class="taskItem">
+    <view class="itemLeft lf">
+      <image src="/img/wrwImg/gslogo.png"></image>
+    </view>
+    <view class="itemRight lf">
+      <view class="shopTitle">
+        【微信】分享到朋友圈-贝店英吉利DHA鱼肉蔬菜小米粉
+      </view>
+      <view class="shareNumber">
+        分享人数10700
+      </view>
+      <view class="price">
+        <view class="shopLable lf">贝店</view>
+        <view class="shopLable lf">5000份</view>
+        <view class="yuan lf">¥</view>
+        <view class="priceNumber lf">1.5</view>
+        <view class="join ri">报名分享></view>
+      </view>
+    </view>
+    <view class="line cl"></view>
+  </view>
+
+  <view class="taskItem">
+    <view class="itemLeft lf">
+      <image src="/img/wrwImg/gslogo.png"></image>
+    </view>
+    <view class="itemRight lf">
+      <view class="shopTitle">
+        【微信】分享到朋友圈-贝店英吉利DHA鱼肉蔬菜小米粉
+      </view>
+      <view class="shareNumber">
+        分享人数10700
+      </view>
+      <view class="price">
+        <view class="shopLable lf">贝店</view>
+        <view class="shopLable lf">5000份</view>
+        <view class="yuan lf">¥</view>
+        <view class="priceNumber lf">1.5</view>
+        <view class="join ri">报名分享></view>
+      </view>
+    </view>
+    <view class="line cl"></view>
+  </view>
+
+  <view class="taskItem">
+    <view class="itemLeft lf">
+      <image src="/img/wrwImg/gslogo.png"></image>
+    </view>
+    <view class="itemRight lf">
+      <view class="shopTitle">
+        【微信】分享到朋友圈-贝店英吉利DHA鱼肉蔬菜小米粉
+      </view>
+      <view class="shareNumber">
+        分享人数10700
+      </view>
+      <view class="price">
+        <view class="shopLable lf">贝店</view>
+        <view class="shopLable lf">5000份</view>
+        <view class="yuan lf">¥</view>
+        <view class="priceNumber lf">1.5</view>
+        <view class="join ri">报名分享></view>
+      </view>
+    </view>
+    <view class="line cl"></view>
+  </view>
+
+   </scroll-view>
+</view>
+    <mask class="mask" hidden="{{hidden1}}" bindtap="mask1" hover-style="none"/>
+<!--任务列表 end -->

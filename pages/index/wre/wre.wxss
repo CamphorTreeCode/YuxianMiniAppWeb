@@ -1,0 +1,331 @@
+/* pages/wre/wre.wxss */
+/* page{
+  height:100vh;
+  opacity: 0;
+} */
+.select{
+border-bottom:2rpx solid #F6F6F6;
+overflow:hidden;
+
+height:8.3vh;
+ font-size: 0.9rem;
+ text-align: center;
+ z-index: 999;
+ font-weight: bold;
+ color:#7B7B7B;
+  
+  position:relative;
+background:#fff;
+
+}
+.mask{
+z-index:1;
+position:fixed;
+background-color:rgba(0, 0, 0, 0.6);
+transition:all 2s;
+
+}
+.AllType{
+width:49%;
+border-right:2rpx solid #D1D1D1;
+height:60rpx;
+
+line-height:60rpx;
+margin-top:18rpx;
+
+
+
+}
+.newTask{
+width:49%;
+
+height:60rpx;
+line-height:60rpx;
+margin-top:18rpx;
+}
+ .active .icon {
+border-bottom:7px solid #FAD661;
+border-top:0;
+
+position:relative;
+left:1%;
+top:18%;
+
+
+
+} 
+.active{
+ color:  #FAD661;
+}
+
+.icon {
+  display: inline-block;
+border:6px solid transparent;
+border-top:7px solid #9b9b9b;
+position:relative;
+left:1%;
+top:47%;
+
+}
+
+.selectTask{
+width:100%;
+position:absolute;
+z-index:2;
+margin-top:-2rpx;
+
+ 
+
+
+}
+
+@keyframes slidown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.slidown {
+display:block;
+animation:slidown 0.2s ease-in both;
+
+}
+
+.slidup {
+display:block;
+animation:slidup 0.2s ease-in both;
+
+}
+@keyframes slidup {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.selectShow{
+  display: none;
+}
+
+.selctTaskList{
+  text-align:center;
+background:#fff;
+color:#575757;
+height:90rpx;
+line-height:90rpx;
+border-top:2rpx solid  #F6F6F6;
+font-size:0.9rem;
+
+}
+
+.newtasks{
+width:100%;
+
+position:absolute;
+/* display:none; */
+z-index:2;
+margin-top: -2rpx
+}
+
+.selctTaskListAll{
+  
+}
+.select image {
+position:relative;
+width:24rpx;
+height:16rpx;
+
+
+display:inline-block;
+overflow:hidden;
+left:4%;
+top:33%;
+
+
+
+}
+.stl{
+  background: #FFD95E;
+  color:#fff;
+
+}
+.myTask{
+background:#FFD95E;
+width:11%;
+height:6.7%;
+position:fixed;
+border-radius:31px;
+font-size:0.5rem;
+color:#fff;
+line-height:83rpx;
+z-index:9999;
+
+text-align:center;
+right:1%;
+margin-top:-12%;
+
+
+}
+
+.taskItem{
+  height: 240rpx;
+  position: relative;
+  background:#fff;
+border-bottom:2rpx solid #F6F6F6;
+
+}
+
+.taskItem .stateLable{
+position:absolute;
+height:24%;
+width:30%;
+transform:rotate(315deg);
+left:-8%;
+top: 0.5%
+
+
+} 
+.taskItem .lableLef{
+
+border-bottom:52rpx solid #FED201;
+border-left:52rpx solid transparent;
+display:inline-block;
+margin-right: -1%;
+}
+.taskItem .lableCenter{
+
+width:76rpx;
+height:52rpx;
+background:#FED201;
+color:#fff;
+text-align: center;
+font-size:0.8rem;
+line-height: 52rpx;
+border-radius:6rpx;
+padding-left:3%;
+
+}
+.taskItem .lableRight{
+    width: 0;
+    height: 0;
+    border-bottom:52rpx solid #FED201;
+    border-right: 52rpx solid transparent;
+    margin-left: -0.9%;
+}
+.itemLeft{
+width:30%;
+
+  height: 100%;
+  text-align: center;
+
+}
+.itemLeft image{
+margin-top:23%;
+height:56%;
+width:66%;
+
+
+}
+.itemRight{
+  width:68%;
+
+    height: 100%;
+
+}
+.shopTitle{
+  height:35%;
+margin:2% 0px;
+
+  font-size: 0.8rem;
+  width: 100%;
+  font-weight: bold;
+line-height:45rpx;
+color: #464646;
+
+}
+.shareNumber{
+  
+height:20%;
+color:#8A8A8A;
+font-size:0.8rem;
+line-height:48rpx;
+
+}
+.price{
+
+  height:35%;
+}
+.shopLable{
+
+width:19%;
+height:57%;
+text-align:center;
+line-height:48rpx;
+
+color:#fff;
+background:#FEDE04;
+font-size:0.7rem;
+margin-right:2%;
+border-radius:8rpx;
+margin-top:3%;
+
+
+
+
+
+}
+.yuan{
+
+height:57%;
+text-align:center;
+line-height:49rpx;
+color:#FB1518;
+font-size:0.8rem;
+margin-left:3%;
+margin-right: 1%;
+margin-top:3%;
+
+    /* margin-left: 4%;
+    font-size: 0.8rem;
+    color: #FB1518;
+    height:57%;
+    position: relative;
+    bottom:-23%; */
+
+
+    
+}
+.priceNumber{
+height:57%;
+text-align:center;
+line-height:52rpx;
+margin-top:2%;
+color:#FB1518;
+font-size:1rem;
+font-weight:bold;
+
+
+
+
+
+  }
+  .join{
+margin-top:3%;
+margin-right:0.5%;
+height:50%;
+width:29%;
+line-height:44rpx;
+
+  }
+  .line{
+    width: 95%;
+    height: 1px;
+   border-bottom: 2rpx solid #F6F6F6;  
+  }

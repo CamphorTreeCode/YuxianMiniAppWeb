@@ -1,0 +1,104 @@
+/* pages/myTask/myTask.wxss */
+page{
+  background: #F5F5F5;
+ 
+}
+
+.topHead{
+height:95rpx;
+text-align: cneter;
+padding-left:10%;
+margin-top: 10rpx;
+background: #fff;
+margin-bottom:2rpx ;
+overflow:hidden;
+  position:relative;
+}
+.all{
+color:#636262;
+width:16%;
+margin-left:5.0%;
+
+
+text-align: center;
+font-size:0.95rem;
+
+height: 95%;
+font-weight: bold;
+line-height:95rpx
+
+}
+.selectAll{
+  color: #FFD95E;
+  border-bottom: 2px solid #FFD95E;
+}
+.secces{
+   color: #FFD95E;
+  border-bottom: 2px solid #6ED6D4;
+}
+.oneItem{
+
+  height:150rpx;
+  background: #fff;
+  border-bottom:2rpx solid #F6F6F6;
+}
+.itemLeft{
+
+ height: 100%;
+ width:60%;
+}
+.itemRight{
+
+ height: 100%;
+ width:30%;
+}
+.taskTitle{
+height: 49%;
+
+ line-height: 75rpx;
+ color:#393939;
+font-size:0.95rem;
+font-weight: bold;
+
+}
+.taskTime{
+height:49%;
+
+line-height:40rpx;
+color:#A9A9A9;
+padding-left:4%;
+font-size:0.9rem;
+
+}
+.examine{
+ width:79%;
+height:50%;
+
+text-align:center;
+
+line-height:75rpx;
+background: #FFD95E;
+color: #fff;
+font-size:0.9rem;
+
+margin-top:15%;
+
+margin-left:9%;
+
+
+}
+.allTypeTtem{
+  margin-bottom: 100px;
+}
+.noContent{
+color:#9F9F9F;
+font-size:1rem;
+text-align:center;
+padding-top:40%;
+height:100rpx;
+
+
+
+}
+
+

@@ -1,0 +1,352 @@
+/**index.wxss**/
+
+page {
+  background: #e4e1e0;
+}
+
+.app {
+  margin: 0px;
+  padding: 0px;
+}
+
+.top_l {
+  height: 50px;
+  background: #ffd95e;
+}
+
+.top_l .address {
+  height: 100%;
+  width: 25%;
+}
+
+.top_l .address text {
+  color: #fff;
+  display: block;
+  margin-left: 30px;
+  padding-top: 10px;
+}
+
+.findInput {
+  margin-top: 10px;
+  border: 1px solid #fff;
+  display: block;
+  width: 65%;
+  border-radius: 10px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.slide-image {
+  height: 100%;
+  width: 100%;
+}
+
+.fourFunction {
+  height: 80px;
+  background: #fff;
+}
+
+.fourFunction .funitme {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+
+.fourFunction .funitme image {
+  width: 45%;
+  height: 45%;
+  /* border: 1px solid red */
+  display: inline-block;
+  margin-top: 12%;
+}
+
+.fourFunction .funitme .cqcs {
+  font-size: 0.85rem;
+  color: #676767;
+  margin-left: 1%;
+  margin-top: 3%;
+}
+
+.threeFunction {
+  margin-top: 5px;
+  height: 110px;
+}
+
+.threeitme {
+  background: #fff;
+}
+
+.threeitme image {
+  width: 61%;
+  height: 48%;
+  margin-bottom: 2%;
+}
+
+.threeitme .zsx {
+  width: 68%;
+}
+
+.threeitme {
+  width: 32%;
+  height: 100%;
+  text-align: center;
+}
+
+.wrw {
+  color: #6f6f6f;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 4%;
+  height: 20%;
+}
+
+.wdztj {
+  color: #6f6f6f;
+  font-size: 0.7rem;
+  margin-left: 8%;
+  text-align: left;
+  margin-top: 1%;
+  height: 12%;
+}
+
+.zjnzq {
+  color: #6f6f6f;
+  text-align: right;
+  font-size: 0.7rem;
+  margin-right: 8%;
+  margin-top: 1%;
+  height: 12%;
+}
+
+.hdwdqy {
+  color: #6f6f6f;
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  height: 16%;
+}
+
+.thrPadding {
+  margin-left: 2%;
+}
+
+.jinri {
+  width: 100%;
+  height: 30px;
+  background: #fff;
+  margin-top: 3px;
+  line-height: 30px;
+}
+
+.jinri text {
+  color: #676767;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.contentBody {
+  margin-top: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.contentItem {
+  height: 240rpx;
+  background: #fff;
+  width: 97.5%;
+  /* -moz-box-shadow:0px 0px 3px #333333; -webkit-box-shadow:0px 0px 3px #333333; */
+  box-shadow: 0px 0.5px 6px #a4a5a7;
+  margin-bottom: 5px;
+
+}
+
+.contentItem .stateLable{
+position:absolute;
+height:24%;
+width:30%;
+transform:rotate(315deg);
+left:-8%;
+top: 0.5%
+
+
+} 
+.contentItem .lableLef{
+
+border-bottom:52rpx solid #FA3934;
+border-left:52rpx solid transparent;
+display:inline-block;
+margin-right: -1%;
+}
+.contentItem .lableCenter{
+
+width:76rpx;
+height:52rpx;
+background: #FA3934;
+color:#fff;
+text-align: center;
+font-size:0.8rem;
+line-height: 52rpx;
+border-radius:6rpx;
+padding-left:3%;
+
+}
+.contentItem .lableRight{
+    width: 0;
+    height: 0;
+    border-bottom:52rpx solid #FA3934;
+    border-right: 52rpx solid transparent;
+    margin-left: -0.9%;
+}
+.itemLeft {
+  width: 30%;
+  height: 100%;
+  border-right: 2px dashed #e4e1e0;
+
+}
+
+.itemRight {
+  height: 100%;
+  /* border:1px solid red */
+  width: 69%;
+}
+
+.Half {
+  height: 23%;
+  width: 7%;
+  border-radius: 24px 0 0px 24px;
+  background: #e4e1e0;
+  position: absolute;
+  right: 0;
+  top: 37%;
+  box-shadow: 0px 0.5px 6px #a4a5a7 inset;
+}
+
+.Template {
+  height: 23%;
+  width: 8px;
+  background: #e4e1e0;
+  position: absolute;
+  right: 0;
+  top: 37%;
+}
+
+.companyLogo {
+  /* vertical-align:middle;
+margin:21%; */
+  height: 75%;
+}
+
+.companyLogo image {
+margin-top:21%;
+width:64%;
+height:71%;
+margin-left:18%;
+
+
+}
+
+.companyName {
+  font-size: 0.58rem;
+  color: #a4a5a7;
+  text-align: center;
+  height: 25%;
+  line-height: 45rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.GCTilte {
+  margin-top: 4%;
+  height: 24%;
+}
+
+.itemRinghtBody {
+  margin-left: 15px;
+  height: 97%;
+}
+
+.GCTilte .gcpd {
+  font-size: 0.75rem;
+  color: #403f3f;
+  font-weight: bold;
+  display: block;
+  width: 26%;
+}
+
+.addressGC {
+  font-size: 0.6rem;
+  margin-top: 1%;
+  margin-left: 1%;
+  color: #f79191;
+  width: 69%;
+}
+
+.itemRinghtThree {
+  height: 69%;
+}
+
+.GCaddress {
+  /* position: relative;
+  top: -4px; */
+  padding-top: 2%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 98%;
+  height: 31%;
+  font-size: 0.6rem;
+  color: #a4a5a7;
+}
+
+.shopPrice {
+  height: 30%;
+}
+
+.shopInformation {
+  font-size: 0.65rem;
+  color: #fff;
+  background: #f1e906;
+  margin-right: 2.5%;
+  border-radius: 8%;
+  height: 76%;
+  text-align: center;
+  line-height: 39rpx;
+  padding: 0px 5px;
+}
+
+.yuan {
+  font-size: 0.7rem;
+  color: red;
+  margin-left: 10px;
+  height: 100%;
+  line-height: 46rpx;
+}
+
+.price {
+  color: red;
+  font-size: 1rem;
+  padding-left: 4px;
+  line-height: 39rpx;
+  font-weight: bold;
+  width: 31%;
+}
+
+.distance {
+  height: 27%;
+}
+
+.distance .distanceNumber {
+  color: #a4a5a7;
+  font-size: 0.58rem;
+  line-height: 45rpx;
+  height: 100%;
+}
+.join{
+ height:68%;
+width:33%;
+line-height:44.8rpx;
+
+}
