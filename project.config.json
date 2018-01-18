@@ -86,6 +86,12 @@
 					"name": "长期传手",
 					"pathName": "pages/index/LongTimeTaskHand/LongTimeTaskHand",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "碎片时间",
+					"pathName": "pages/index/fragmentTime/fragmentTime",
+					"query": ""
 				}
 			]
 		}

@@ -79,5 +79,10 @@ Page({
     wx.navigateTo({
       url: '/pages/index/LongTimeTaskHand/LongTimeTaskHand'
     })
+  },
+  fragmentTime:function(){
+    wx.navigateTo({
+      url: '/pages/index/fragmentTime/fragmentTime'
+    })
   }
 })

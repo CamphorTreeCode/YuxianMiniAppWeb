@@ -9,7 +9,8 @@
     "pages/taskDetails/taskCommit/taskCommit",
     "pages/index/DaySettlement/Settlement",
     "pages/taskHand/taskHand",
-    "pages/index/LongTimeTaskHand/LongTimeTaskHand"
+    "pages/index/LongTimeTaskHand/LongTimeTaskHand",
+    "pages/index/fragmentTime/fragmentTime"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -30,12 +30,12 @@
         <image src="/img/pageLogo1.png"></image>
         <view class="cqcs">日结传手</view>
       </view>
-      <view class="lf funitme">
+      <view class="lf funitme" bindtap="fragmentTime">
         <image src="/img/pageLogo1.png"></image>
         <view class="cqcs">碎片时间</view>
       </view>
       <view class="lf funitme">
-        <image src="/img/pageLogo4.png"></image>
+        <image src="/img/pageLogo4.png" bindtap="campusInternship"></image>
         <view class="cqcs">校园实习</view>
       </view>
     </view>
