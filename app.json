@@ -8,7 +8,8 @@
     "pages/taskDetails/taskDetails",
     "pages/taskDetails/taskCommit/taskCommit",
     "pages/index/DaySettlement/Settlement",
-    "pages/taskHand/taskHand"
+    "pages/taskHand/taskHand",
+    "pages/index/LongTimeTaskHand/LongTimeTaskHand"
   ],
   "window":{
     "backgroundTextStyle":"light",

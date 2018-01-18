@@ -73,5 +73,11 @@ Page({
     wx.navigateTo({
       url: '/pages/index/DaySettlement/Settlement'
     })
+  },
+  longTimeTaskHand:function(){
+    
+    wx.navigateTo({
+      url: '/pages/index/LongTimeTaskHand/LongTimeTaskHand'
+    })
   }
 })

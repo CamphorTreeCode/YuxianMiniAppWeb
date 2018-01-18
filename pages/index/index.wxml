@@ -22,7 +22,7 @@
   <!--中间的部分 start  -->
   <view class="Middle">
     <view class="fourFunction">
-      <view class="lf funitme">
+      <view class="lf funitme" bindtap="longTimeTaskHand">
         <image src="/img/pageLogo1.png"></image>
         <view class="cqcs">长期传手</view>
       </view>

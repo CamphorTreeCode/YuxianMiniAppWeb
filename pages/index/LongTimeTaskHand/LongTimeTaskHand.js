@@ -1,4 +1,4 @@
-// pages/index/DaySettlement/Settlement.js
+// pages/index/LongTimeTaskHand/LongTimeTaskHand.js
 var app = getApp();
 var check = require('../../../utils/authorizationCheck.js');
 Page({
@@ -32,7 +32,7 @@ Page({
     /**月薪不显示 不下拉动画  start*/
     salaryFlag: false,
     salaryshow: true,
-   /**月薪不显示 不下拉动画  end*/
+    /**月薪不显示 不下拉动画  end*/
   },
 
   /**
@@ -41,8 +41,8 @@ Page({
   onLoad: function (options) {
     console.log("storeRecruit.js start ")
     var that = this;
-   check.getLocationCheck(that)
-   
+    check.getLocationCheck(that)
+
     // check.getLocationCheck(that).then(function (res) {
     // console.log("dd", res)
     // })
@@ -55,49 +55,49 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+
   },  //点击全部职位
   allType: function (e) {
     console.log(e);
@@ -282,7 +282,7 @@ Page({
       salary: e.currentTarget.dataset.name
     })
   },
-  jumpTaskHand :function(){
+  jumpTaskHand: function () {
     wx.navigateTo({
       url: '/pages/taskHand/taskHand'
     })
