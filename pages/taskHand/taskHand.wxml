@@ -120,7 +120,9 @@
 </view>
 
 <view class="menuTask lf">
-  <view class="TaskCommit lf" bindtap='taskCommit'>任务提交</view>
+  <view class="TaskCommit lf" bindtap='taskCommit'>
+  <view class="joinLogo">
+  <image src="/img/taskDetailsImg/join.png"></image></view></view>
   <view bindtap='shareTask'>
     <button class="shareTask ri" open-type="share">
       分享

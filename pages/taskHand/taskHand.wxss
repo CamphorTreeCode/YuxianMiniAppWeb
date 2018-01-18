@@ -3,7 +3,6 @@
 page {
   background: #F6F6F6;
 }
-
 .shopImgTop{
 height:400rpx;
 overflow:hidden;
@@ -167,15 +166,25 @@ margin-bottom:17%;
 }
 .menuTask{
   height: 140rpx;
-
-    position: fixed;
+  position: fixed;
   bottom: 0;
   width: 100%;
- background: #fff;
+  background: #fff;
+}
+.joinLogo{
+width:32%;
+height:75%;
+margin:0 auto;
+margin-top:3%;
+
+}
+.joinLogo image{
+  width: 100%;
+  height:100%;
+
+
 }
 .TaskCommit{
-
-
   width: 73%;
   height: 80%;
   text-align:center;
@@ -199,7 +208,7 @@ line-height:112rpx;
 margin-top:14rpx;
 margin-right:2.5%;
 color:#fff;
-background:#F9BF04;
+background:#FFD95E;
 border:0px;
 border-radius: 0px;
  /* background:url("/img/taskDetailsImg/shareButtom.png"); */
