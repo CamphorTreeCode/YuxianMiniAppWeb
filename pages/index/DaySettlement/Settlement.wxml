@@ -15,19 +15,17 @@
 <!--选择下拉列表 strat  -->
 <!--选择显示全部岗位 strat  -->
 <view class="selectAllType  {{alltypeFlag ? 'slidown' : 'slidup'}} {{AlltypeShow?'selectShow':''}}" data-city="{{alltypeFlag}}">
-  <view class="selctTaskList lf {{index==selectAllTypeIndex?'stl':''}}" wx:for="{{TypeList}}" bindtap="selectAllType" data-task='{{index}}' data-name='{{item}}' wx:key="unique">{{item}}</view>
+<view class="selctTaskList lf {{index==selectAllTypeIndex?'stl':''}}" wx:for="{{TypeList}}" bindtap="selectAllType" data-task='{{index}}' data-name='{{item}}' wx:key="unique">{{item}}</view>
 </view>
 <!--选择显示全部岗位 end  -->
 <!--选择显示位置 strat  -->
 <view class="locationNow {{nowLocationFlag ? 'slidown' : 'slidup'}} {{nowLocationShow?'selectShow':''}}" data-city="{{nowLocationFlag}}">
   <view class="selctAllTypeList lf {{index==selectNowLocationIndex?'stl':''}}" wx:for="{{cityNowList}}" bindtap="locationNow" data-name='{{item.name}}' data-task='{{index}}' wx:key="unique">{{item.name}}</view>
-
 </view>
 <!--选择显示位置 end  -->
 <!--选择显示月薪 strat  -->
 <view class="locationNows {{salaryFlag ? 'slidown' : 'slidup'}} {{salaryshow?'selectShow':''}}" data-city="{{salaryFlag}}">
   <view class="selctAllTypeList lf {{index==selectSalaryIndex?'stl':''}}" wx:for="{{salaryList}}" bindtap="selectSalary" data-name='{{item}}' data-task='{{index}}' wx:key="unique">{{item}}</view>
-
 </view>
 <!--选择显示月薪 end  -->
 <!----选择下拉列表 end  -->
@@ -36,7 +34,7 @@
     <!--每个商品的信息  strat-->
     <view class="contentBody">
 
-      <view class="contentItem">
+      <view class="contentItem" bindtap="jumpTaskHand">
         <view class="itemLeft lf">
 
           <view class="companyLogo">

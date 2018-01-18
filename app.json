@@ -7,8 +7,8 @@
     "pages/index/storeRecruit/storeRecruit",
     "pages/taskDetails/taskDetails",
     "pages/taskDetails/taskCommit/taskCommit",
-    "pages/index/DaySettlement/Settlement"
-     "pages/taskHand/taskHand"
+    "pages/index/DaySettlement/Settlement",
+    "pages/taskHand/taskHand"
   ],
   "window":{
     "backgroundTextStyle":"light",

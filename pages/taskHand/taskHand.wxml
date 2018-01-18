@@ -1,0 +1,129 @@
+<import src="/wxParse/wxParse.wxml" />
+
+
+<view class="shopImgTop">
+  <image src="/img/taskDetailsImg/taskbanner.png"></image>
+</view>
+<view class="taskDetailsList">
+  <view class="taskDetailsListItem detalisOne lf">
+    <view class="taskdetailsListItemLogo taskOne">
+      <view class="taskListLogo lf">
+        <image src="/img/taskDetailsImg/other.png"></image>
+      </view>
+      <view class="taskdetailsListItemText textBottom lf">
+        派单
+      </view>
+
+    </view>
+
+    <view class="taskdetailsListItemLogo ">
+      <view class="taskListLogo lf">
+        <image src="/img/taskDetailsImg/address.png"></image>
+      </view>
+      <view class="taskdetailsListItemText textBotomas lf">
+        松江区
+      </view>
+
+    </view>
+  </view>
+  <view class="taskDetailsListItems lf">
+    <view class="taskdetailsListItemLogo taskOne">
+      <view class="taskListLogo lf">
+        <image src="/img/taskDetailsImg/time.png"></image>
+      </view>
+      <view class="taskdetailsListItemText textBottom lf">
+        男女不限
+      </view>
+
+    </view>
+
+    <view class="taskdetailsListItemLogo">
+      <view class="taskListLogo lf">
+        <image src="/img/taskDetailsImg/createTime.png"></image>
+      </view>
+      <view class="taskdetailsListItemText textTop lf">
+        2018-02-29
+      </view>
+
+    </view>
+  </view>
+  <view class="taskDetailsListItemReadNumber ri">
+    浏览量:1300</view>
+</view>
+
+<view class="company">
+  <view class="companyLeft lf">
+    <image src="/img/taskDetailsImg/company.jpg"></image>
+  </view>
+  <view class="companyRight lf">
+    <view class="companyContentLeft lf">
+      <view class="companyName">上海传手信息科技有限公司</view>
+      <view class="companyDetails">
+        <view class="Authentication lf">认证商家</view>
+        <view class="teamNumber lf">团队150-500人</view>
+      </view>
+    </view>
+    <view class="companyContentRight ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+  </view>
+</view>
+
+
+<view class="taskPrice">
+  <view class="taskPriceLogo lf">
+    <image src="/img/taskDetailsImg/taskPriceLogo.png"></image>
+  </view>
+  <view class="price lf">¥ 150
+    <span class="Symbol">/</span>
+    <span class="days">1天</span>
+  </view>
+  <view class="SurplusNumber ri">剩余量：5</view>
+</view>
+
+<view class="taskPrice contentText">
+  <view class="taskPriceLogo lf">
+    <image class="stepimg" src="/img/taskDetailsImg/step.png"></image>
+  </view>
+  <view class="price lf">职位描述</view>
+
+</view>
+<view class="taskContentText">
+   <template is="wxParse" data="{{wxParseData:article.nodes}}" /> 
+  <view class="bottomPrompt">
+    <view class="Reminder">
+      <view class="ReminderContent">
+        温馨提示：在线报名有利于商家实时查看您的简历，极大提高录取概率哦！
+      </view>
+    </view>
+    <view class="interestUser">
+      <view class="interestUserTitle">
+        <view class="interestUserTitleLogo lf">
+          <image src="/img/taskDetailsImg/7.png"></image>
+        </view>
+        <view class="interestUserTitleName lf">感兴趣的用户</view>
+      </view>
+      <view class="userHeadLogo">
+        <view class="userHeadLogoImg lf" wx:for="{{headImg}}">
+         <image src="{{item}}"></image>
+        </view>
+              <view class="userHeadLogoImg lf" >
+            <view class="more">
+            <view class="moreLine lineOne lf"></view>
+            <view class="moreLine lf"></view>
+            <view class="moreLine lf"></view>
+            </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="menuTask lf">
+  <view class="TaskCommit lf" bindtap='taskCommit'>任务提交</view>
+  <view bindtap='shareTask'>
+    <button class="shareTask ri" open-type="share">
+      分享
+    </button>
+  </view>
+</view>

@@ -26,7 +26,7 @@
         <image src="/img/pageLogo1.png"></image>
         <view class="cqcs">长期传手</view>
       </view>
-      <view class="lf funitme">
+      <view class="lf funitme" bindtap='daySettlement'>
         <image src="/img/pageLogo1.png"></image>
         <view class="cqcs">日结传手</view>
       </view>

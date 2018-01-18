@@ -107,7 +107,7 @@ Page({
         shownavindex: 0,
         /**再次点击全部岗位不显示 上拉动画  start*/
         alltypeFlag: false,
-        AlltypeShow: true,
+        AlltypeShow: false,
         /**再次点击全部岗位不显示 上拉动画  end*/
         /**位置不显示 不下拉动画  start*/
         nowLocationFlag: false,
@@ -282,4 +282,9 @@ Page({
       salary: e.currentTarget.dataset.name
     })
   },
+  jumpTaskHand :function(){
+    wx.navigateTo({
+      url: '/pages/taskHand/taskHand'
+    })
+  }
 })

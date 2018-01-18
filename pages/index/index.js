@@ -68,5 +68,10 @@ Page({
     wx.navigateTo({
       url: '/pages/index/storeRecruit/storeRecruit'
     })
+  },
+  daySettlement:function(){
+    wx.navigateTo({
+      url: '/pages/index/DaySettlement/Settlement'
+    })
   }
 })
