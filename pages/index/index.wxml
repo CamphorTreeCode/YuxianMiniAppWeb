@@ -23,20 +23,27 @@
   <view class="Middle">
     <view class="fourFunction">
       <view class="lf funitme" bindtap="longTimeTaskHand">
-        <image src="/img/pageLogo1.png"></image>
+      <view class="funitmeImg">
+        <image src="/img/longHand.png"></image>
+        </view>
         <view class="cqcs">长期传手</view>
       </view>
       <view class="lf funitme" bindtap='daySettlement'>
-        <image src="/img/pageLogo1.png"></image>
+      <view class="funitmeImg">
+        <image src="/img/dayHand.png"></image>      </view>
         <view class="cqcs">日结传手</view>
       </view>
       <view class="lf funitme" bindtap="fragmentTime">
-        <image src="/img/pageLogo1.png"></image>
+      <view class="funitmeImg">
+        <image src="/img/FragmentTime.png"></image>
+              </view>
         <view class="cqcs">碎片时间</view>
       </view>
-      <view class="lf funitme">
-        <image src="/img/pageLogo4.png" bindtap="campusInternship"></image>
-        <view class="cqcs">校园实习</view>
+      <view class="lf funitme" bindtap="campusInternship">
+      <view class="funitmeImg">
+        <image src="/img/campusPromotion.png" ></image>
+              </view>
+        <view class="cqcs">校园推广</view>
       </view>
     </view>
 
@@ -46,19 +53,19 @@
         <view class="wrw">微任务</view>
         <view class="wdztj">微店主推荐</view>
         <view class="zjnzq">在家能赚钱</view>
-        <image src="/img/wzp.png"></image>
+        <image src="/img/wrwzp.png"></image>
       </view>
-      <view class="lf threeitme thrPadding zsx">
+      <view class="lf threeitme thrPadding zsx" bindtap='findInternship'>
         <view class="wrw">找实习</view>
         <view class="hdwdqy">好单位大企业</view>
 
-        <image src="/img/qyzp.png"></image>
+        <image src="/img/zsx.png"></image>
       </view>
       <view class="lf threeitme thrPadding" bindtap='storeRecruit'>
         <view class="wrw">门店招聘</view>
         <view class="wdztj">微店主推荐</view>
         <view class="zjnzq">在家能赚钱</view>
-        <image src="/img/wzp.png"></image>
+        <image src="/img/mrw.png"></image>
       </view>
     </view>
   </view>

@@ -1,0 +1,510 @@
+<!--pages/straightHall/straightHall.wxml-->
+<view class="select cl">
+  <view id="allType" class="AllType {{shownavindex == 1? 'active' : ''}} lf" bindtap='allType' data-nav="1">{{allType}}
+    <view class="icon"></view>
+  </view>
+  <view id="location" class="newTask {{shownavindex == 2? 'active' : ''}} lf" bindtap="cityNow" data-nav="2">{{location}}
+    <view class="icon"></view>
+  </view>
+  <view id="salary " class="salary {{shownavindex == 3? 'active' : ''}} lf" bindtap="salary" data-nav="3">{{salary}}
+    <view class="icon"></view>
+  </view>
+</view>
+<!--选择下拉列表名称 end  -->
+<!--选择下拉列表 strat  -->
+<!--选择显示全部岗位 strat  -->
+<view class="selectAllType  {{alltypeFlag ? 'slidown' : 'slidup'}} {{AlltypeShow?'selectShow':''}}" data-city="{{alltypeFlag}}">
+<view class="selctTaskList lf {{index==selectAllTypeIndex?'stl':''}}" wx:for="{{TypeList}}" bindtap="selectAllType" data-task='{{index}}' data-name='{{item}}' wx:key="unique">{{item}}</view>
+</view>
+<!--选择显示全部岗位 end  -->
+<!--选择显示位置 strat  -->
+<view class="locationNow {{nowLocationFlag ? 'slidown' : 'slidup'}} {{nowLocationShow?'selectShow':''}}" data-city="{{nowLocationFlag}}">
+  <view class="selctAllTypeList lf {{index==selectNowLocationIndex?'stl':''}}" wx:for="{{cityNowList}}" bindtap="locationNow" data-name='{{item.name}}' data-task='{{index}}' wx:key="unique">{{item.name}}</view>
+</view>
+<!--选择显示位置 end  -->
+<!--选择显示月薪 strat  -->
+<view class="locationNows {{salaryFlag ? 'slidown' : 'slidup'}} {{salaryshow?'selectShow':''}}" data-city="{{salaryFlag}}">
+  <view class="selctAllTypeList lf {{index==selectSalaryIndex?'stl':''}}" wx:for="{{salaryList}}" bindtap="selectSalary" data-name='{{item}}' data-task='{{index}}' wx:key="unique">{{item}}</view>
+</view>
+<!--选择显示月薪 end  -->
+<!----选择下拉列表 end  -->
+  <view class="content">
+   <scroll-view scroll-y style="height:{{100-9.9}}vh" scroll-into-view="{{toView}}">
+    <!--每个商品的信息  strat-->
+    <view class="contentBody">
+
+      <view class="contentItem" bindtap="jumpTaskHand">
+        <view class="itemLeft lf">
+
+          <view class="companyLogo">
+            <image src="/img/gslogo.png"></image>
+          </view>
+          <view class="companyName">
+            上海传手信息有限公司
+          </view>
+
+        </view>
+        <view class="itemRight lf">
+          <view class="itemRinghtBody">
+            <view class="itemRinghtThree">
+              <view class="GCTilte ">
+                <view class="gcpd lf">广场派单</view>
+                <view class="addressGC lf ">闵行区</view>
+
+              </view>
+
+              <view class="GCaddress">
+                上海市松江区广富林路松讲万达广场
+              </view>
+
+              <view class="shopPrice ">
+
+                <view class="shopInformation lf">认证</view>
+                <view class="shopInformation lf">5天</view>
+                <view class="shopInformation lf">4人</view>
+                <view class="yuan lf">¥</view>
+                <view class="price lf">750</view>
+              </view>
+
+
+            </view>
+            <view class="distance ">
+              <view class="distanceNumber lf">距离我4.78KM</view>
+              <view class="join ri">我要报名></view>
+            </view>
+          </view>
+
+          <view class="Half">
+          </view>
+          <view class="Template">
+          </view>
+        </view>
+        <view class="stateLable">
+          <view class="lableLef lf"></view>
+          <view class="lableCenter lf">
+            派单</view>
+          <view class="lableRight lf"></view>
+        </view>
+      </view>
+
+    </view>
+    <!--每个商品的信息  end-->
+    <!--每个商品的信息  strat-->
+    <view class="contentBody">
+
+      <view class="contentItem">
+        <view class="itemLeft lf">
+
+          <view class="companyLogo">
+            <image src="/img/gslogo.png"></image>
+          </view>
+          <view class="companyName">
+            上海传手信息有限公司
+          </view>
+
+        </view>
+        <view class="itemRight lf">
+          <view class="itemRinghtBody">
+            <view class="itemRinghtThree">
+              <view class="GCTilte ">
+                <view class="gcpd lf">广场派单</view>
+                <view class="addressGC lf ">闵行区</view>
+
+              </view>
+
+              <view class="GCaddress">
+                上海市松江区广富林路松讲万达广场
+              </view>
+
+              <view class="shopPrice ">
+
+                <view class="shopInformation lf">认证</view>
+                <view class="shopInformation lf">5天</view>
+                <view class="shopInformation lf">4人</view>
+                <view class="yuan lf">¥</view>
+                <view class="price lf">750</view>
+              </view>
+
+
+            </view>
+            <view class="distance ">
+              <view class="distanceNumber lf">距离我4.78KM</view>
+              <view class="join ri">我要报名></view>
+            </view>
+          </view>
+
+          <view class="Half">
+          </view>
+          <view class="Template">
+          </view>
+        </view>
+        <view class="stateLable">
+          <view class="lableLef lf"></view>
+          <view class="lableCenter lf">
+            派单</view>
+          <view class="lableRight lf"></view>
+        </view>
+      </view>
+
+    </view>
+    <!--每个商品的信息  end-->
+
+    <!--每个商品的信息  strat-->
+    <view class="contentBody">
+
+      <view class="contentItem">
+        <view class="itemLeft lf">
+
+          <view class="companyLogo">
+            <image src="/img/gslogo.png"></image>
+          </view>
+          <view class="companyName">
+            上海传手信息有限公司
+          </view>
+
+        </view>
+        <view class="itemRight lf">
+          <view class="itemRinghtBody">
+            <view class="itemRinghtThree">
+              <view class="GCTilte ">
+                <view class="gcpd lf">广场派单</view>
+                <view class="addressGC lf ">闵行区</view>
+
+              </view>
+
+              <view class="GCaddress">
+                上海市松江区广富林路松讲万达广场
+              </view>
+
+              <view class="shopPrice ">
+
+                <view class="shopInformation lf">认证</view>
+                <view class="shopInformation lf">5天</view>
+                <view class="shopInformation lf">4人</view>
+                <view class="yuan lf">¥</view>
+                <view class="price lf">750</view>
+              </view>
+
+
+            </view>
+            <view class="distance ">
+              <view class="distanceNumber lf">距离我4.78KM</view>
+              <view class="join ri">我要报名></view>
+            </view>
+          </view>
+
+          <view class="Half">
+          </view>
+          <view class="Template">
+          </view>
+        </view>
+        <view class="stateLable">
+          <view class="lableLef lf"></view>
+          <view class="lableCenter lf">
+            派单</view>
+          <view class="lableRight lf"></view>
+        </view>
+      </view>
+
+    </view>
+    <!--每个商品的信息  end-->
+    <!--每个商品的信息  strat-->
+    <view class="contentBody">
+
+      <view class="contentItem">
+        <view class="itemLeft lf">
+
+          <view class="companyLogo">
+            <image src="/img/gslogo.png"></image>
+          </view>
+          <view class="companyName">
+            上海传手信息有限公司
+          </view>
+
+        </view>
+        <view class="itemRight lf">
+          <view class="itemRinghtBody">
+            <view class="itemRinghtThree">
+              <view class="GCTilte ">
+                <view class="gcpd lf">广场派单</view>
+                <view class="addressGC lf ">闵行区</view>
+
+              </view>
+
+              <view class="GCaddress">
+                上海市松江区广富林路松讲万达广场
+              </view>
+
+              <view class="shopPrice ">
+
+                <view class="shopInformation lf">认证</view>
+                <view class="shopInformation lf">5天</view>
+                <view class="shopInformation lf">4人</view>
+                <view class="yuan lf">¥</view>
+                <view class="price lf">750</view>
+              </view>
+
+
+            </view>
+            <view class="distance ">
+              <view class="distanceNumber lf">距离我4.78KM</view>
+              <view class="join ri">我要报名></view>
+            </view>
+          </view>
+
+          <view class="Half">
+          </view>
+          <view class="Template">
+          </view>
+        </view>
+        <view class="stateLable">
+          <view class="lableLef lf"></view>
+          <view class="lableCenter lf">
+            派单</view>
+          <view class="lableRight lf"></view>
+        </view>
+      </view>
+
+    </view>
+    <!--每个商品的信息  end-->
+ <!--每个商品的信息  strat-->
+    <view class="contentBody">
+
+      <view class="contentItem">
+        <view class="itemLeft lf">
+
+          <view class="companyLogo">
+            <image src="/img/gslogo.png"></image>
+          </view>
+          <view class="companyName">
+            上海传手信息有限公司
+          </view>
+
+        </view>
+        <view class="itemRight lf">
+          <view class="itemRinghtBody">
+            <view class="itemRinghtThree">
+              <view class="GCTilte ">
+                <view class="gcpd lf">广场派单</view>
+                <view class="addressGC lf ">闵行区</view>
+
+              </view>
+
+              <view class="GCaddress">
+                上海市松江区广富林路松讲万达广场
+              </view>
+
+              <view class="shopPrice ">
+
+                <view class="shopInformation lf">认证</view>
+                <view class="shopInformation lf">5天</view>
+                <view class="shopInformation lf">4人</view>
+                <view class="yuan lf">¥</view>
+                <view class="price lf">750</view>
+              </view>
+
+
+            </view>
+            <view class="distance ">
+              <view class="distanceNumber lf">距离我4.78KM</view>
+              <view class="join ri">我要报名></view>
+            </view>
+          </view>
+
+          <view class="Half">
+          </view>
+          <view class="Template">
+          </view>
+        </view>
+        <view class="stateLable">
+          <view class="lableLef lf"></view>
+          <view class="lableCenter lf">
+            派单</view>
+          <view class="lableRight lf"></view>
+        </view>
+      </view>
+
+    </view>
+    <!--每个商品的信息  end-->
+    <!--每个商品的信息  strat-->
+    <view class="contentBody">
+
+      <view class="contentItem">
+        <view class="itemLeft lf">
+
+          <view class="companyLogo">
+            <image src="/img/gslogo.png"></image>
+          </view>
+          <view class="companyName">
+            上海传手信息有限公司
+          </view>
+
+        </view>
+        <view class="itemRight lf">
+          <view class="itemRinghtBody">
+            <view class="itemRinghtThree">
+              <view class="GCTilte ">
+                <view class="gcpd lf">广场派单</view>
+                <view class="addressGC lf ">闵行区</view>
+
+              </view>
+
+              <view class="GCaddress">
+                上海市松江区广富林路松讲万达广场
+              </view>
+
+              <view class="shopPrice ">
+
+                <view class="shopInformation lf">认证</view>
+                <view class="shopInformation lf">5天</view>
+                <view class="shopInformation lf">4人</view>
+                <view class="yuan lf">¥</view>
+                <view class="price lf">750</view>
+              </view>
+
+
+            </view>
+            <view class="distance ">
+              <view class="distanceNumber lf">距离我4.78KM</view>
+              <view class="join ri">我要报名></view>
+            </view>
+          </view>
+
+          <view class="Half">
+          </view>
+          <view class="Template">
+          </view>
+        </view>
+        <view class="stateLable">
+          <view class="lableLef lf"></view>
+          <view class="lableCenter lf">
+            派单</view>
+          <view class="lableRight lf"></view>
+        </view>
+      </view>
+
+    </view>
+    <!--每个商品的信息  end-->
+
+    <!--每个商品的信息  strat-->
+    <view class="contentBody">
+
+      <view class="contentItem">
+        <view class="itemLeft lf">
+
+          <view class="companyLogo">
+            <image src="/img/gslogo.png"></image>
+          </view>
+          <view class="companyName">
+            上海传手信息有限公司
+          </view>
+
+        </view>
+        <view class="itemRight lf">
+          <view class="itemRinghtBody">
+            <view class="itemRinghtThree">
+              <view class="GCTilte ">
+                <view class="gcpd lf">广场派单</view>
+                <view class="addressGC lf ">闵行区</view>
+
+              </view>
+
+              <view class="GCaddress">
+                上海市松江区广富林路松讲万达广场
+              </view>
+
+              <view class="shopPrice ">
+
+                <view class="shopInformation lf">认证</view>
+                <view class="shopInformation lf">5天</view>
+                <view class="shopInformation lf">4人</view>
+                <view class="yuan lf">¥</view>
+                <view class="price lf">750</view>
+              </view>
+
+
+            </view>
+            <view class="distance ">
+              <view class="distanceNumber lf">距离我4.78KM</view>
+              <view class="join ri">我要报名></view>
+            </view>
+          </view>
+
+          <view class="Half">
+          </view>
+          <view class="Template">
+          </view>
+        </view>
+        <view class="stateLable">
+          <view class="lableLef lf"></view>
+          <view class="lableCenter lf">
+            派单</view>
+          <view class="lableRight lf"></view>
+        </view>
+      </view>
+
+    </view>
+    <!--每个商品的信息  end-->
+    <!--每个商品的信息  strat-->
+    <view class="contentBody">
+
+      <view class="contentItem">
+        <view class="itemLeft lf">
+
+          <view class="companyLogo">
+            <image src="/img/gslogo.png"></image>
+          </view>
+          <view class="companyName">
+            上海传手信息有限公司
+          </view>
+
+        </view>
+        <view class="itemRight lf">
+          <view class="itemRinghtBody">
+            <view class="itemRinghtThree">
+              <view class="GCTilte ">
+                <view class="gcpd lf">广场派单</view>
+                <view class="addressGC lf ">闵行区</view>
+
+              </view>
+
+              <view class="GCaddress">
+                上海市松江区广富林路松讲万达广场
+              </view>
+
+              <view class="shopPrice ">
+
+                <view class="shopInformation lf">认证</view>
+                <view class="shopInformation lf">5天</view>
+                <view class="shopInformation lf">4人</view>
+                <view class="yuan lf">¥</view>
+                <view class="price lf">750</view>
+              </view>
+
+
+            </view>
+            <view class="distance ">
+              <view class="distanceNumber lf">距离我4.78KM</view>
+              <view class="join ri">我要报名></view>
+            </view>
+          </view>
+
+          <view class="Half">
+          </view>
+          <view class="Template">
+          </view>
+        </view>
+        <view class="stateLable">
+          <view class="lableLef lf"></view>
+          <view class="lableCenter lf">
+            派单</view>
+          <view class="lableRight lf"></view>
+        </view>
+      </view>
+
+    </view>
+    <!--每个商品的信息  end-->
+
+  </scroll-view>
+  </view>
+   <mask class="mask" hidden="{{hidden1}}" bindtap="mask1" hover-style="none" /> 

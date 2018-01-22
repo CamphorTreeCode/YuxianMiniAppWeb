@@ -2,15 +2,52 @@
 
 
 
+// function sendSocketMessage() {
+//   console.log("3msg")
 
+//     wx.sendSocketMessage({
+//       data: "hello"
+//     })
+
+
+  
+//   wx.onSocketMessage(function (res) {
+//     console.log('收到服务器内容：' + res.data)
+//   })
+// }
 
 App({
+  
   onLaunch: function () {
     console.log("app.js start ")
     var that = this;
+    var socketOpen = false
+    var socketMsgQueue = []
     // 定义省份城市
-
-
+  //打开websocket
+    // wx.connectSocket({
+    //   url: 'ws://localhost:8080/wx/websocket',
+    //   data: {
+    //     x: '111',
+    //     y: '222'
+    //   },
+    //   header: {
+    //     'content-type': 'application/json'
+    //   },
+    //   method: "GET",
+    //   success:function(res){
+    //   console.log("1",res)
+    //   }
+    // })
+    //监听websocket
+    wx.onSocketOpen(function (res) {
+      console.log("2",res)
+      socketOpen = true
+   
+        sendSocketMessage()
+      
+      socketMsgQueue = []
+    })
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())

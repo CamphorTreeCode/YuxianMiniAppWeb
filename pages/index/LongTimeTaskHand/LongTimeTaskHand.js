@@ -144,6 +144,10 @@ Page({
   cityNow: function (e) {
     console.log(e);
     var that = this;
+    if (that.data.location == "位置") {
+      check.getLocationCheck(that)
+    }
+    else {
     if (that.data.nowLocationFlag) {
       that.setData({
         shownavindex: 0,
@@ -180,7 +184,7 @@ Page({
         hidden1: false,
 
       })
-    }
+    }}
   },
   //点击选择月薪
   salary: function (e) {
@@ -223,6 +227,7 @@ Page({
 
       })
     }
+    
   },
   mask1: function () {
     var that = this;

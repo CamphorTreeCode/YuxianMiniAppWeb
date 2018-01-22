@@ -1,0 +1,150 @@
+<!--pages/index/FindInternship/FindInternship.wxml-->
+<!--选择下拉列表名称   start-->
+<view class="select ">
+  <view id="allType" class="AllType {{shownavindex == 1? 'active' : ''}} lf" bindtap='allType' data-nav="1">{{allType}}
+    <view class="icon"></view>
+  </view>
+  <view id="location" class="newTask {{shownavindex == 2? 'active' : ''}} lf" bindtap="cityNow" data-nav="2">{{location}}
+    <view class="icon"></view>
+  </view>
+  <view id="salary " class="salary {{shownavindex == 3? 'active' : ''}} lf" bindtap="salary" data-nav="3">{{salary}}
+    <view class="icon"></view>
+  </view>
+</view>
+<!--选择下拉列表名称 end  -->
+<!--选择下拉列表 strat  -->
+<!--选择显示全部岗位 strat  -->
+<view class="selectAllType  {{alltypeFlag ? 'slidown' : 'slidup'}} {{AlltypeShow?'selectShow':''}}" data-city="{{alltypeFlag}}">
+  <view class="selctAllTypeList lf {{index==selectAllTypeIndex?'stl':''}}" wx:for="{{TypeList}}" bindtap="selectAllType" data-task='{{index}}' data-name='{{item}}' wx:key="unique">{{item}}</view>
+</view>
+<!--选择显示全部岗位 end  -->
+<!--选择显示位置 strat  -->
+<view class="locationNow {{nowLocationFlag ? 'slidown' : 'slidup'}} {{nowLocationShow?'selectShow':''}}" data-city="{{nowLocationFlag}}">
+  <view class="selctAllTypeList lf {{index==selectNowLocationIndex?'stl':''}}" wx:for="{{cityNowList}}" bindtap="locationNow" data-name='{{item.name}}' data-task='{{index}}' wx:key="unique">{{item.name}}</view>
+
+</view>
+<!--选择显示位置 end  -->
+<!--选择显示月薪 strat  -->
+<view class="locationNow {{salaryFlag ? 'slidown' : 'slidup'}} {{salaryshow?'selectShow':''}}" data-city="{{salaryFlag}}">
+  <view class="selctAllTypeList lf {{index==selectSalaryIndex?'stl':''}}" wx:for="{{salaryList}}" bindtap="selectSalary" data-name='{{item}}' data-task='{{index}}' wx:key="unique">{{item}}</view>
+
+</view>
+<!--选择显示月薪 end  -->
+<!----选择下拉列表 end  -->
+<!--商品列表   start-->
+<view class="store">
+  <scroll-view scroll-y style="height:{{100-8.5}}vh" scroll-into-view="{{toView}}">
+    <view class="storeItem">
+      <view class="model1">
+        <view class="shopTitle lf">服务员、收银员、前台接待单</view>
+        <view class="shopAddressCity ri ">松江</view>
+      </view>
+      <view class="model2 cl">3000-5000元/月</view>
+      <view class="model3">
+        <view class="model3Left lf">
+          <view class="storeAddress">上海市松江区广福林路松江万达广场</view>
+          <view class="storeName">松江区松江万达广场来伊份店</view>
+        </view>
+        <view class="model3Right ri">
+          <view class="join ri">我要报名></view>
+        </view>
+      </view>
+      <view class="model4 cl">距离我4.78km</view>
+      <view class="model5 ">
+        <view class="storeLable lf">门店</view>
+        <view class="storeLable lf">包吃</view>
+        <view class="storeLable lf">包住</view>
+      </view>
+    </view>
+    <view class="storeItem">
+      <view class="model1">
+        <view class="shopTitle lf">服务员、收银员、前台接待单</view>
+        <view class="shopAddressCity ri ">松江</view>
+      </view>
+      <view class="model2 cl">3000-5000元/月</view>
+      <view class="model3">
+        <view class="model3Left lf">
+          <view class="storeAddress">上海市松江区广福林路松江万达广场</view>
+          <view class="storeName">松江区松江万达广场来伊份店</view>
+        </view>
+        <view class="model3Right ri">
+          <view class="join ri">我要报名></view>
+        </view>
+      </view>
+      <view class="model4 cl">距离我4.78km</view>
+      <view class="model5 ">
+        <view class="storeLable lf">门店</view>
+        <view class="storeLable lf">包吃</view>
+        <view class="storeLable lf">包住</view>
+      </view>
+    </view>
+    <view class="storeItem">
+      <view class="model1">
+        <view class="shopTitle lf">服务员、收银员、前台接待单</view>
+        <view class="shopAddressCity ri ">松江</view>
+      </view>
+      <view class="model2 cl">3000-5000元/月</view>
+      <view class="model3">
+        <view class="model3Left lf">
+          <view class="storeAddress">上海市松江区广福林路松江万达广场</view>
+          <view class="storeName">松江区松江万达广场来伊份店</view>
+        </view>
+        <view class="model3Right ri">
+          <view class="join ri">我要报名></view>
+        </view>
+      </view>
+      <view class="model4 cl">距离我4.78km</view>
+      <view class="model5 ">
+        <view class="storeLable lf">门店</view>
+        <view class="storeLable lf">包吃</view>
+        <view class="storeLable lf">包住</view>
+      </view>
+    </view>
+    <view class="storeItem">
+      <view class="model1">
+        <view class="shopTitle lf">服务员、收银员、前台接待单</view>
+        <view class="shopAddressCity ri ">松江</view>
+      </view>
+      <view class="model2 cl">3000-5000元/月</view>
+      <view class="model3">
+        <view class="model3Left lf">
+          <view class="storeAddress">上海市松江区广福林路松江万达广场</view>
+          <view class="storeName">松江区松江万达广场来伊份店</view>
+        </view>
+        <view class="model3Right ri">
+          <view class="join ri">我要报名></view>
+        </view>
+      </view>
+      <view class="model4 cl">距离我4.78km</view>
+      <view class="model5 ">
+        <view class="storeLable lf">门店</view>
+        <view class="storeLable lf">包吃</view>
+        <view class="storeLable lf">包住</view>
+      </view>
+    </view>
+    <view class="storeItem">
+      <view class="model1">
+        <view class="shopTitle lf">服务员、收银员、前台接待单</view>
+        <view class="shopAddressCity ri ">松江</view>
+      </view>
+      <view class="model2 cl">3000-5000元/月</view>
+      <view class="model3">
+        <view class="model3Left lf">
+          <view class="storeAddress">上海市松江区广福林路松江万达广场</view>
+          <view class="storeName">松江区松江万达广场来伊份店</view>
+        </view>
+        <view class="model3Right ri">
+          <view class="join ri">我要报名></view>
+        </view>
+      </view>
+      <view class="model4 cl">距离我4.78km</view>
+      <view class="model5 ">
+        <view class="storeLable lf">门店</view>
+        <view class="storeLable lf">包吃</view>
+        <view class="storeLable lf">包住</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<!--商品列表 end  -->
+ <mask class="mask" hidden="{{hidden1}}" bindtap="mask1" hover-style="none" /> 

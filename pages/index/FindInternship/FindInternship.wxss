@@ -1,0 +1,292 @@
+/* pages/index/FindInternship/FindInternship.wxss */
+.mask{
+z-index:1;
+position:fixed;
+background-color:rgba(0, 0, 0, 0.6);
+transition:all 2s;
+
+}
+.select{
+border-bottom:2rpx solid #F6F6F6;
+overflow:hidden;
+
+height:100rpx;
+ font-size: 0.9rem;
+ text-align: center;
+ z-index: 999;
+ font-weight: bold;
+ color:#7B7B7B;
+  
+  position:relative;
+background:#fff;
+
+}
+.AllType{
+width:33%;
+border-right:2rpx solid #D1D1D1;
+height:60rpx;
+
+line-height:60rpx;
+margin-top:18rpx;
+
+
+
+}.newTask{
+width:33%;
+border-right:2rpx solid #D1D1D1;
+height:60rpx;
+line-height:60rpx;
+margin-top:18rpx;
+
+}
+.salary{
+width:33%;
+
+height:60rpx;
+line-height:60rpx;
+margin-top:18rpx;
+
+}
+ .active .icon {
+border-bottom:7px solid #FAD661;
+border-top:0;
+
+position:relative;
+left:1%;
+top:18%;
+
+
+
+} 
+.active{
+ color:  #FBD85F;
+}
+
+.icon {
+  display: inline-block;
+border:6px solid transparent;
+border-top:7px solid #9b9b9b;
+position:relative;
+left:1%;
+top:47%;
+
+}
+
+.selectAllType{
+width:100%;
+position:absolute;
+z-index:2;
+margin-top:-2rpx;
+background: #fff;
+padding:3% 2%;
+
+}
+
+
+@keyframes slidown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.slidown {
+display:block;
+animation:slidown 0.2s ease-in both;
+
+}
+
+.slidup {
+display:block;
+animation:slidup 0.2s ease-in both;
+
+}
+@keyframes slidup {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.selectShow{
+  display: none;
+}
+
+
+.selctAllTypeList{
+text-align:center;
+background:#fff;
+color:#9E9E9E;
+height:72rpx;
+line-height:72rpx;
+border:2rpx solid #EBEBEB;
+font-size:0.8rem;
+width:18%;
+margin:1.5% 2.75%;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+border-radius:11%;
+
+
+
+}
+
+
+.locationNow{
+width:100%;
+
+position:absolute;
+/* display:none; */
+z-index:2;
+margin-top: -2rpx;
+background:#fff;
+padding:3% 0%;
+
+}
+
+.selctTaskListAll{
+  
+}
+.select image {
+position:relative;
+width:24rpx;
+height:16rpx;
+
+
+display:inline-block;
+overflow:hidden;
+left:4%;
+top:33%;
+
+
+
+}
+.stl{
+  background: #FFD95E;
+  color:#fff;
+ border :2rpx solid #fff;
+}
+
+
+
+.storeItem{
+
+  height:280rpx;
+  padding-left:2%;
+  padding:3% 4%;
+border-bottom:2rpx solid #F4F4F4;
+
+}
+.model1{
+
+ height:18%;
+
+
+}
+.model1 .shopTitle{
+
+font-size:0.95rem;
+font-weight:bold;
+color:#464646;
+height: 100%;
+line-height:50.4rpx;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+
+
+}
+.model1 .shopAddressCity{
+
+font-size:0.68rem;
+color:#E47A84;
+line-height:50.4rpx;
+margin-right:3%;
+
+height:100%;
+}
+.model2{
+
+height:19%;
+color:#DD3840;
+font-weight:bold;
+line-height:53.2rpx;
+
+
+}
+.model3{
+ height:28%;
+}
+.model3 .model3Left{
+
+   height: 100%;
+   width: 65%;
+}
+.model3 .model3Left .storeAddress{
+
+font-size: 0.72rem;
+height:50%;
+line-height:39.2rpx;
+color: #8C8C8C;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+
+
+}
+.model3 .model3Left .storeName{
+
+ font-size:0.67rem;
+ height: 50%;
+line-height:36.6rpx;
+ color:#8C8C8C;
+ white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+
+}
+.model3 .model3Right{
+width: 33%;
+height: 100%;
+
+}
+.join{
+margin-top:8%;
+line-height:39.7rpx;
+height:50%;
+width:67%;
+
+
+}
+.model4{
+
+ font-size:0.6rem;
+ color:#8C8C8C;
+ height: 15%;
+
+}
+.model5{
+
+height: 20%
+}
+.model5 .storeLable{
+
+   font-size: 0.65rem;
+  color: #fff;
+  background: #f1e906;
+  margin-right: 2.5%;
+  border-radius: 12%;
+  height:76%;
+
+  line-height: 45.5rpx;
+ padding: 0px 5px; 
+
+
+}

@@ -1,0 +1,14 @@
+<!--pages/my/myWallet/myWallet.wxml-->
+<view class="walletShow">
+  <view class="walletNumber ">
+    <view class="walletLogo lf">
+    <image src="/img/myImg/wallet.png"></image>
+    </view>
+    <view class="walletNumberName lf">0.00</view>
+  </view>
+  <view class="walletName ri">钱包余额（元）</view>
+  <view class="walletReflect cl">
+   <view class="walletReflectBut lf">提现</view>
+   <view class="setting lf">设置</view>
+  </view>
+</view>

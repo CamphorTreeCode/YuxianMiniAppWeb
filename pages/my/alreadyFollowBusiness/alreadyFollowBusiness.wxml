@@ -1,0 +1,33 @@
+<!--pages/my/alreadyFollowBusiness/alreadyFollowBusiness.wxml-->
+
+<view class="company">
+  <view class="companyLeft lf">
+    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516611236216&di=d7f47f7ce0dbbbf0febcb5d26d81433a&imgtype=0&src=http%3A%2F%2Fimg2.cntrades.com%2F201206%2F30%2F12-00-00-97-578732.jpg"></image>
+  </view>
+  <view class="companyRight lf">
+    <view class="companyContentLeft lf">
+      <view class="companyName">上海昊泰劳务服务有限公司</view>
+      <view class="companyDetails">
+        <view class="Authentication lf">认证商家</view>
+        <view class="teamNumber lf">团队150-500人</view>
+      </view>
+    </view>
+  
+  </view>
+</view>
+
+<view class="company">
+  <view class="companyLeft lf">
+   <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516611262730&di=e819818e7f468a8603fbc9bc4b1141db&imgtype=0&src=http%3A%2F%2Fpic2.ooopic.com%2F10%2F87%2F21%2F38b1OOOPIC6d.jpg"></image>
+  </view>
+  <view class="companyRight lf">
+    <view class="companyContentLeft lf">
+      <view class="companyName">上海展美展览服务有限公司</view>
+      <view class="companyDetails">
+        <view class="Authentication lf">认证商家</view>
+        <view class="teamNumber lf">团队150-500人</view>
+      </view>
+    </view>
+  
+  </view>
+</view>

@@ -1,0 +1,151 @@
+/* pages/my/my.wxss */
+
+.Head {
+  height: 400rpx;
+  background: #ffd95e;
+}
+
+.Head .headLogo {
+  height: 65%;
+  width: 60%;
+  margin: 0px auto;
+}
+
+.Head .headLogo .headLogoImg {
+  margin-top: 3%;
+  height: 58%;
+  width: 35%;
+  margin: 0px auto;
+  background: #fff;
+  text-align: center;
+  border-radius: 71%;
+}
+
+.Head .headLogo .headLogoImg image {
+  height: 93%;
+  width: 93%;
+  margin-top: 3%;
+  border-radius: 71%;
+}
+
+.Head .headLogo .headLogoName {
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+  height: 20%;
+  line-height: 56rpx;
+}
+
+.Head .headLogo .autograph {
+  text-align: center;
+  color: #fff;
+  font-size: 0.8rem;
+  height: 20%;
+  line-height: 56rpx;
+  padding-left: 5%;
+}
+
+.Head .headWallet {
+  height: 35%;
+  text-align: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.Head .headWallet .wallet {
+  height: 38%;
+  text-align: center;
+  width: 28%;
+  margin-top: 10.5%;
+  font-size: 0.8rem;
+  color: #898989;
+  margin-right: 3%;
+}
+
+.headWalletBody {
+  height: 100%;
+  margin-left: 15%;
+}
+
+.walletImg {
+  width: 36%;
+  height: 100%;
+}
+
+.walletImg image {
+  width: 85%;
+  height: 100%;
+}
+
+.walletName {
+  line-height: 34rpx;
+  width: 45.5%;
+  border-right: 2rpx solid #c8c8c8;
+  padding-right: 11%;
+  font-size: 0.8rem;
+  height: 60%;
+  margin-top: 6%;
+}
+
+.followName {
+  border-right: 0;
+}
+
+.myApply {
+  height: 250rpx;
+  color: #6e6e6e;
+}
+
+.myApplyTilte {
+  height: 35%;
+  font-size: 0.97rem;
+  line-height: 87rpx;
+  padding-left: 5%;
+}
+
+.myApplyFunction {
+  height: 65%;
+  color: #6e6e6e;
+  border-top: 3rpx solid #f5f5f5;
+  border-bottom: 3rpx solid #f5f5f5;
+}
+
+.oneFunction {
+  height: 100%;
+  border-right: 1rpx solid #f5f5f5;
+  width: 24.5%;
+}
+
+.fourfun {
+  border-right: 0;
+}
+
+.oneFunction .oneFunctionImg {
+  height: 57%;
+}
+
+.oneFunction .oneFunctionImg image {
+  width: 52%;
+  height: 92%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 5%;
+}
+
+.onefunctionName {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.AboutUs {
+  height: 320rpx;
+}
+
+.oneTilte {
+  font-size: 0.9rem;
+  line-height: 80rpx;
+  padding-left: 5%;
+  color: #6e6e6e;
+  border-bottom: 1rpx solid #f5f5f5;
+  height: 25%;
+}

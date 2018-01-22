@@ -1,0 +1,68 @@
+/* pages/my/myWallet/myWallet.wxss */
+page{
+  background: #F5F5F5;
+}
+/*钱包展示  */
+.walletShow{
+  background: #fff;
+  
+  height:400rpx;
+  width: 90%;
+  margin:0 auto;
+}
+.walletNumber{
+height: 50%;
+
+}
+.walletNumber .walletLogo{
+width:13%;
+height:44%;
+margin-top:8%;
+margin-left:7%;
+
+}
+.walletNumber .walletLogo image{
+width:100%;
+height:96%;
+
+}
+.walletNumberName{
+color:#FAE009;
+font-size:2.3rem;
+margin-top:6%;
+margin-left:2%;
+
+}
+.walletName{
+  height: 15%;
+  color: #A5A5A5;
+  font-size: 0.8rem;
+  
+  }
+  .walletReflect{
+    height: 35%;
+
+  }
+  .walletReflectBut{
+    width: 75%;
+    height: 70%;
+margin-top:1.5%;
+
+    text-align: center;
+    line-height: 98rpx;
+    font-size: 1.2rem;
+    background: #FFDD00;
+    color: #fff;
+  }
+  .setting{
+    width: 20%;
+    height: 70%;
+    text-align: center;
+    line-height: 98rpx;
+    font-size: 1.2rem;
+    background: #FFDD00;
+    color: #fff;
+    margin-left: 2.5%;
+    margin-top:1.5%;
+  }
+  

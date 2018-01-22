@@ -1,0 +1,50 @@
+<!--pages/my/myApply/myApply.wxml-->
+
+<view class="oneItem">
+  <view class="itemImg lf">
+    <view class="itemImgBody">
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516611236216&di=d7f47f7ce0dbbbf0febcb5d26d81433a&imgtype=0&src=http%3A%2F%2Fimg2.cntrades.com%2F201206%2F30%2F12-00-00-97-578732.jpg"></image>
+    </view>
+  </view>
+  <view class="itemLeft lf">
+    <view class="taskTitle ">上海昊泰劳务服务有限公司</view>
+    <view class="taskTime ">报名时间：2016.06.20 14:28</view>
+  </view>
+  <view class="itemRight ri">
+    <view class="examine">
+      投递成功</view>
+  </view>
+</view>
+
+
+<view class="oneItem">
+  <view class="itemImg lf">
+    <view class="itemImgBody">
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516611262730&di=e819818e7f468a8603fbc9bc4b1141db&imgtype=0&src=http%3A%2F%2Fpic2.ooopic.com%2F10%2F87%2F21%2F38b1OOOPIC6d.jpg"></image>
+    </view>
+  </view>
+  <view class="itemLeft lf">
+    <view class="taskTitle ">上海展美展览服务有限公司</view>
+    <view class="taskTime ">报名时间：2016.06.10 16:21</view>
+  </view>
+  <view class="itemRight ri">
+    <view class="examine">
+      投递成功</view>
+  </view>
+</view>
+
+<view class="oneItem">
+  <view class="itemImg lf">
+    <view class="itemImgBody">
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516611171911&di=91950bcaaa96e908fe44c30cf8f134db&imgtype=0&src=http%3A%2F%2Fstatic.zhulong.com%2Fphoto%2Fsmall%2F200901%2F07%2F223961_1_0_0_560_w_0.jpg"></image>
+    </view>
+  </view>
+  <view class="itemLeft lf">
+    <view class="taskTitle ">上海坤托网络科技发展有限公司</view>
+    <view class="taskTime ">报名时间：2016.06.10 16:21</view>
+  </view>
+  <view class="itemRight ri">
+    <view class="examine"  style="background:#999">
+      已下架</view>
+  </view>
+</view>

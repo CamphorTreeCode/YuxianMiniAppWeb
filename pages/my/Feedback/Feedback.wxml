@@ -1,0 +1,15 @@
+<!--pages/my/Feedback/Feedback.wxml-->
+
+<view class="body">
+  <textarea placeholder="请输入你的意见..." maxlength="200" name="textarea"   placeholder-class="texta" />
+  <view class="fontNumber">200</view>
+</view>
+<view class="camera">
+  <view class="cameraBody">
+    <view class="cameraImg">
+      <image src="/img/myImg/camera.png"></image>
+    </view>
+  </view>
+  <view class="cameraName">(选填，上传照片，最多3张)</view>
+</view>
+<button class="commitBut" bindtap="setDisabled">提交</button>

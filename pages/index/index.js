@@ -84,5 +84,17 @@ Page({
     wx.navigateTo({
       url: '/pages/index/fragmentTime/fragmentTime'
     })
-  }
+  },
+  campusInternship: function () {
+    wx.navigateTo({
+      url:'/pages/index/campusInternship/campusInternship'
+    })
+  },
+  //pages/index/index 
+   findInternship:function(){
+     
+     wx.navigateTo({
+       url: '/pages/index/FindInternship/FindInternship'
+     })
+   }
 })
