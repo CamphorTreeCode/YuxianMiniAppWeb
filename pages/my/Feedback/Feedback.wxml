@@ -1,12 +1,20 @@
 <!--pages/my/Feedback/Feedback.wxml-->
 
 <view class="body">
-  <textarea placeholder="请输入你的意见..." maxlength="200" name="textarea"   placeholder-class="texta" />
-  <view class="fontNumber">200</view>
+  <textarea placeholder="请输入你的意见..." maxlength="200" name="textarea"   placeholder-class="texta" bindinput="bindinput"/>
+  <view class="fontNumber">{{size}}</view>
 </view>
 <view class="camera">
   <view class="cameraBody">
-    <view class="cameraImg">
+  <view class="imgs lf" wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+      <image class="previewImg " src="{{item}}" data-index="{{index}}" mode="scaleToFill" bindtap="previewImg"></image>
+      <view class="delete-btn" data-index="{{index}}" catchtap="deleteImg">
+        <image src="/img/taskDetailsImg/deleteImg.png"></image>
+      </view>
+    </view>
+
+
+    <view class="cameraImg" bindtap="chooseImg">
       <image src="/img/myImg/camera.png"></image>
     </view>
   </view>

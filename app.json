@@ -1,7 +1,6 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
     "pages/index/wre/wre",
     "pages/index/wre/myTask/myTask",
     "pages/index/storeRecruit/storeRecruit",
@@ -18,12 +17,18 @@
     "pages/my/Feedback/Feedback",
     "pages/my/myApply/myApply",
     "pages/my/alreadyFollowBusiness/alreadyFollowBusiness",
-    "pages/my/myWallet/myWallet"
+    "pages/my/myWallet/myWallet",
+    "pages/my/myCollection/myCollection",
+    "pages/my/personData/personData",
+    "pages/my/myApplyType/myApplyType",
+    "pages/my/myResume/myResume",
+    "pages/my/securitySetting/securitySetting",
+     "pages/test/test"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#FFD95E",
-    "navigationBarTitleText": "",
+  "backgroundTextStyle":"light",
+  "navigationBarBackgroundColor": "#FFD95E",
+  "navigationBarTitleText": "",
    "navigationBarTextStyle": "white"
   },
   "tabBar": {

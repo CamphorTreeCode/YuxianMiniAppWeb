@@ -1,30 +1,30 @@
 <!--pages/taskDetails/taskCommit/taskCommit.wxml-->
 <view class="taskTitle">
-<view class="imgContent">截图内容:</view>
-<view class="commitImg">提交分享后截图</view>
+  <view class="imgContent">截图内容:</view>
+  <view class="commitImg">提交分享后截图</view>
 </view>
 
 <view class="sendImg">
 
 
-  <view class="img" >
-  <view class="imgs lf" wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
-    <image class="previewImg "  src="{{item}}" data-index="{{index}}" mode="scaleToFill" bindtap="previewImg"></image>
-    <view class="delete-btn" data-index="{{index}}" catchtap="deleteImg">
-    <image src="/img/taskDetailsImg/deleteImg.png"></image>
+  <view class="img">
+    <view class="imgs lf" wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+      <image class="previewImg " src="{{item}}" data-index="{{index}}" mode="scaleToFill" bindtap="previewImg"></image>
+      <view class="delete-btn" data-index="{{index}}" catchtap="deleteImg">
+        <image src="/img/taskDetailsImg/deleteImg.png"></image>
+      </view>
     </view>
+
+    <image class="simg" bindtap='chooseImg' src="/img/taskDetailsImg/sendImg.png"></image>
   </view>
 
- <image class="simg" bindtap='chooseImg' src="/img/taskDetailsImg/sendImg.png"></image>
- </view>
- 
- <view class="imgDetails">
-   (上传照片，最多支持三张)
- </view>
+  <view class="imgDetails">
+    (上传照片，最多支持三张)
+  </view>
 
 </view>
 
 
 <view class="commitExamine">
- <button>提交审核</button>
+  <button>提交审核</button>
 </view>

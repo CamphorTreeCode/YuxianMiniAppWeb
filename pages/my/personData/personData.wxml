@@ -1,0 +1,37 @@
+<!--pages/my/personData/personData.wxml-->
+<view class="Head  lf">
+ <view class="headLogo">
+   <view class="headLogoImg">
+    <image src="http://upload.ouliu.net/i/20180120112029lrtlg.jpeg"></image>
+   </view>
+   <view class="headLogoName">
+   <view class="headLogoNames lf">菜小⑦</view> 
+    <view class="DataSet lf">编辑</view> </view>
+    <view class="autograph">加油，努力！！</view>
+ </view>
+ <view class="headWallet cl" style=" background-image:url('http://upload.ouliu.net/i/20180120111743rji2g.png')"></view>
+
+</view>
+
+<view class="DataBody cl">
+ <view class="oneData">
+  <view class="oneDataName lf">真实姓名</view>
+  <view class="oneDataValue lf">王大锤</view>
+ </view>
+  <view class="oneData">
+  <view class="oneDataName lf">年龄</view>
+  <view class="oneDataValue lf">20</view>
+ </view>
+  <view class="oneData">
+  <view class="oneDataName lf">性别</view>
+  <view class="oneDataValue lf">男</view>
+ </view>
+  <view class="oneData">
+  <view class="oneDataName lf">身高</view>
+  <view class="oneDataValue lf">170cm</view>
+ </view>
+  <view class="oneData">
+  <view class="oneDataName lf">所在地区</view>
+  <view class="oneDataValue lf">上海/松江</view>
+ </view>
+</view>

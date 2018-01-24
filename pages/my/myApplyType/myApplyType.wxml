@@ -1,0 +1,100 @@
+<!--pages/my/myApplyType/myApplyType.wxml-->
+<!--pages/myTask/myTask.wxml-->
+<view class="topHead">
+  <view id="all" class="all  {{currentTab==0 ? 'selectAll' : ''}} lf" data-current="0" bindtap="selectType">已报名</view>
+  <view id="waitAudited" class="all  {{currentTab==1 ? 'selectAll' : ''}} lf" data-current="1" bindtap="selectType">已录用</view>
+  <view id="fail" class="all  {{currentTab==2 ? 'selectAll' : ''}} lf" data-current="2" bindtap="selectType">已到岗</view>
+  <view id="completed" class="all  {{currentTab==3 ? 'secces' : ''}} lf" data-current="3" bindtap="selectType">已结算</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{100-8.9}}vh" bindchange="bindChange">
+  <swiper-item class="allTypeTtem">
+
+    <!--全部的分类 strat  -->
+    <view class="bodyItem">
+      <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
+        <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">【派单】松江万达来伊份店</view>
+            <view class="taskTime ">2018-02-29</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              审核中</view>
+          </view>
+        </view>
+        <!--其中一个  end-->
+
+        <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">【派单】上海传手信息科技有限公司</view>
+            <view class="taskTime ">2018-02-13</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              已通过</view>
+          </view>
+        </view>
+        <!--其中一个  end-->
+
+      </scroll-view>
+    </view>
+    <!--全部的分类 end  -->
+
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
+           <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">【派单】松江万达来伊份店</view>
+            <view class="taskTime ">2018-02-29</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              已通过</view>
+          </view>
+        </view>
+        <!--其中一个  end-->
+
+
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
+      <view class="noContent" style="display:none">没有找到对应的任务</view>
+             <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">【派单】上海传手信息科技有限公司</view>
+            <view class="taskTime ">2018-02-13</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              已确认</view>
+          </view>
+        </view>
+        <!--其中一个  end-->
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
+
+
+           <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">【派单】上海传手信息科技有限公司</view>
+            <view class="taskTime ">2018-02-13</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              已确认</view>
+          </view>
+        </view>
+        <!--其中一个  end-->
+    </scroll-view>
+  </swiper-item>
+</swiper>

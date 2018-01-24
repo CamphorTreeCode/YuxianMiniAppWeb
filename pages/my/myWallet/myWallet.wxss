@@ -7,7 +7,7 @@ page{
   background: #fff;
   
   height:400rpx;
-  width: 90%;
+  width: 95%;
   margin:0 auto;
 }
 .walletNumber{
@@ -15,7 +15,7 @@ height: 50%;
 
 }
 .walletNumber .walletLogo{
-width:13%;
+width:12%;
 height:44%;
 margin-top:8%;
 margin-left:7%;
@@ -44,15 +44,16 @@ margin-left:2%;
 
   }
   .walletReflectBut{
-    width: 75%;
-    height: 70%;
+    width:73%;
+height:70%;
 margin-top:1.5%;
+text-align:center;
+line-height:98rpx;
+font-size:1.2rem;
+background:#FFDD00;
+color:#fff;
+margin-left:2%;
 
-    text-align: center;
-    line-height: 98rpx;
-    font-size: 1.2rem;
-    background: #FFDD00;
-    color: #fff;
   }
   .setting{
     width: 20%;
@@ -65,4 +66,33 @@ margin-top:1.5%;
     margin-left: 2.5%;
     margin-top:1.5%;
   }
-  
+/*我的账单  */
+  .myBill{
+       width: 95%;
+       margin:0 auto;
+ 
+  }
+  .myBill .myBillName{
+   color:#A0A0A0;
+font-size:0.8rem;
+margin-left:2%;
+margin-top:3%;
+
+  }
+  .myBill .myBillLogo{
+    height: 400rpx;
+    width: 100%;
+  }
+   .myBill .myBillLogo image{
+height:48%;
+width:26%;
+margin-top:26%;
+margin-left:37%;
+
+
+  }
+  .noBill{
+  color:#A0A0A0;
+  font-size:0.8rem;
+  text-align: center;
+  }

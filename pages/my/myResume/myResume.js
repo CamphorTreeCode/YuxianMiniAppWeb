@@ -1,4 +1,5 @@
-// pages/my/my.js
+// pages/my/myResume/myResume.js
+
 Page({
 
   /**
@@ -62,25 +63,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  walletSelt:function(){
-    wx.navigateTo({
-      url: '/pages/my/myWallet/myWallet'
-    })
-  },
-  followSelt:function(){
-    wx.navigateTo({
-      url: '/pages/my/alreadyFollowBusiness/alreadyFollowBusiness'
-    })
-  },
-  myApply: function () {
-    wx.navigateTo({
-      url: '/pages/my/myApply/myApply'
-    })
-  },
-  feedback: function () {
-    wx.navigateTo({
-      url: '/pages/my/Feedback/Feedback'
-    })
-  },
+  }
 })

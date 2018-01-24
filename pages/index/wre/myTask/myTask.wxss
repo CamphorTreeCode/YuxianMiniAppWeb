@@ -45,19 +45,21 @@ line-height:95rpx
 .itemLeft{
 
  height: 100%;
- width:60%;
+ width:76%;
 }
 .itemRight{
 
  height: 100%;
- width:30%;
+ width:24%;
 }
 .taskTitle{
 height: 49%;
 
  line-height: 75rpx;
  color:#393939;
-font-size:0.95rem;
+font-size:0.8rem;
+margin-top:2.2%;
+
 font-weight: bold;
 
 }
@@ -67,23 +69,19 @@ height:49%;
 line-height:40rpx;
 color:#A9A9A9;
 padding-left:4%;
-font-size:0.9rem;
+font-size:0.8rem;
 
 }
 .examine{
- width:79%;
+width:80%;
 height:50%;
-
 text-align:center;
-
 line-height:75rpx;
-background: #FFD95E;
-color: #fff;
-font-size:0.9rem;
-
-margin-top:15%;
-
-margin-left:9%;
+background:#FFD95E;
+color:#fff;
+font-size:0.8rem;
+margin-top:20%;
+margin-left:12%;
 
 
 }

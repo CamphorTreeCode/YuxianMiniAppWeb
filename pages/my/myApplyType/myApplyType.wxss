@@ -1,0 +1,3 @@
+/* pages/my/myApplyType/myApplyType.wxss */
+@import "/pages/index/wre/myTask/myTask";
+

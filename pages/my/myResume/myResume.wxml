@@ -1,0 +1,76 @@
+<!--pages/my/myResume/myResume.wxml 我的简历-->
+<view class="AboutUs">
+  <view class="oneTilte">
+    <view class="oneTilteName lf">头像</view>
+  
+    <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+      <view class="headLogo ri">
+       <image src="http://upload.ouliu.net/i/20180120112029lrtlg.jpeg"></image>
+    </view>
+  </view>
+  <view class="oneTilte">
+    <view class="oneTilteName lf">昵称</view>
+    <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+      <view class="oneContent ri">菜小⑦</view>
+  </view>
+  <view class="oneTilte" bindtap='feedback'>
+    <view class="oneTilteName lf">个性签名</view>
+    <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+        <view class="oneContent ri">加油，努力！！！</view>
+  </view>
+  <view class="oneTilte">
+    <view class="oneTilteName lf">真实姓名</view>
+        <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+         <view class="oneContent ri">王大锤</view>
+  </view>
+  <view class="oneTilte">
+    <view class="oneTilteName lf">年龄</view>
+    <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+             <view class="oneContent ri">20</view>
+  </view>
+  <view class="oneTilte">
+    <view class="oneTilteName lf">性别</view>
+    <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+             <view class="oneContent ri">男</view>
+  </view>
+  <view class="oneTilte" bindtap='feedback'>
+    <view class="oneTilteName lf">身高</view>
+    <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+             <view class="oneContent ri">170cm</view>
+  </view>
+  <view class="oneTilte">
+    <view class="oneTilteName lf">手机号</view>
+        <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+             <view class="oneContent ri">1348248613</view>
+  </view>
+    <view class="oneTilte" bindtap='feedback'>
+    <view class="oneTilteName lf">所在地区</view>
+    <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+             <view class="oneContent ri">上海/松江</view>
+  </view>
+  <view class="oneTilte">
+    <view class="oneTilteName lf">个人经历</view>
+        <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+             <view class="oneContent ri">本人在大学期间做了很多的兼职工作</view>
+  </view>
+</view>

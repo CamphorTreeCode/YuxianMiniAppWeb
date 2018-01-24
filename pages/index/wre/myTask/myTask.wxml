@@ -11,117 +11,117 @@
 
     <!--全部的分类 strat  -->
     <view class="bodyItem">
-       <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" >
-      <!--其中一个  strat-->
-      <view class="oneItem">
-        <view class="itemLeft lf">
-          <view class="taskTitle ">【微信】分享到朋友圈</view>
-          <view class="taskTime ">2016-09-26</view>
+      <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
+        <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">【微信】分享到朋友圈</view>
+            <view class="taskTime ">2016-09-26</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              审核中</view>
+          </view>
         </view>
-        <view class="itemRight ri">
-          <view class="examine">
-            审核中</view>
-        </view>
-      </view>
-      <!--其中一个  end-->
+        <!--其中一个  end-->
 
-      <!--其中一个  strat-->
-      <view class="oneItem">
-        <view class="itemLeft lf">
-          <view class="taskTitle ">【米星】转发海报</view>
-          <view class="taskTime ">2016-09-13</view>
+        <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">【米星】转发海报</view>
+            <view class="taskTime ">2016-09-13</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              已通过</view>
+          </view>
         </view>
-        <view class="itemRight ri">
-          <view class="examine">
-            已通过</view>
-        </view>
-      </view>
-      <!--其中一个  end-->
+        <!--其中一个  end-->
 
-         <!--其中一个  strat-->
-      <view class="oneItem">
-        <view class="itemLeft lf">
-          <view class="taskTitle ">【微信】分享到朋友圈</view>
-          <view class="taskTime ">2016-09-26</view>
+        <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">【微信】分享到朋友圈</view>
+            <view class="taskTime ">2016-09-26</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              审核中</view>
+          </view>
         </view>
-        <view class="itemRight ri">
-          <view class="examine">
-            审核中</view>
-        </view>
-      </view>
-      <!--其中一个  end-->
+        <!--其中一个  end-->
 
-      <!--其中一个  strat-->
-      <view class="oneItem">
-        <view class="itemLeft lf">
-          <view class="taskTitle ">【米星】转发海报</view>
-          <view class="taskTime ">2016-09-13</view>
+        <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">【米星】转发海报</view>
+            <view class="taskTime ">2016-09-13</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              已通过</view>
+          </view>
         </view>
-        <view class="itemRight ri">
-          <view class="examine">
-            已通过</view>
-        </view>
-      </view>
-      <!--其中一个  end-->
+        <!--其中一个  end-->
 
-     <!--其中一个  strat-->
-      <view class="oneItem">
-        <view class="itemLeft lf">
-          <view class="taskTitle ">【微信】分享到朋友圈</view>
-          <view class="taskTime ">2016-09-26</view>
+        <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">【微信】分享到朋友圈</view>
+            <view class="taskTime ">2016-09-26</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              审核中</view>
+          </view>
         </view>
-        <view class="itemRight ri">
-          <view class="examine">
-            审核中</view>
-        </view>
-      </view>
-      <!--其中一个  end-->
+        <!--其中一个  end-->
 
-      <!--其中一个  strat-->
-      <view class="oneItem">
-        <view class="itemLeft lf">
-          <view class="taskTitle ">【米星】转发海报</view>
-          <view class="taskTime ">2016-09-13</view>
+        <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">【米星】转发海报</view>
+            <view class="taskTime ">2016-09-13</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              已通过</view>
+          </view>
         </view>
-        <view class="itemRight ri">
-          <view class="examine">
-            已通过</view>
-        </view>
-      </view>
-      <!--其中一个  end-->
+        <!--其中一个  end-->
 
-    <!--其中一个  strat-->
-      <view class="oneItem">
-        <view class="itemLeft lf">
-          <view class="taskTitle ">【微信】分享到朋友圈</view>
-          <view class="taskTime ">2016-09-26</view>
+        <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">【微信】分享到朋友圈</view>
+            <view class="taskTime ">2016-09-26</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              审核中</view>
+          </view>
         </view>
-        <view class="itemRight ri">
-          <view class="examine">
-            审核中</view>
-        </view>
-      </view>
-      <!--其中一个  end-->
+        <!--其中一个  end-->
 
-      <!--其中一个  strat-->
-      <view class="oneItem">
-        <view class="itemLeft lf">
-          <view class="taskTitle ">【米星】转发海报</view>
-          <view class="taskTime ">2016-09-13</view>
+        <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">【米星】转发海报</view>
+            <view class="taskTime ">2016-09-13</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              已通过</view>
+          </view>
         </view>
-        <view class="itemRight ri">
-          <view class="examine">
-            已通过</view>
-        </view>
-      </view>
-      <!--其中一个  end-->
- </scroll-view>
+        <!--其中一个  end-->
+      </scroll-view>
     </view>
     <!--全部的分类 end  -->
-      
+
   </swiper-item>
   <swiper-item>
-   <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" >
+    <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
       <!--其中一个  strat-->
       <view class="oneItem">
         <view class="itemLeft lf">
@@ -136,16 +136,16 @@
       <!--其中一个  end-->
 
 
-      </scroll-view>
+    </scroll-view>
   </swiper-item>
   <swiper-item>
-   <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" >
+    <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
       <view class="noContent">没有找到对应的任务</view>
-      </scroll-view>
+    </scroll-view>
   </swiper-item>
   <swiper-item>
-   <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" >
- 
+    <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
+
 
       <!--其中一个  strat-->
       <view class="oneItem">
@@ -159,6 +159,6 @@
         </view>
       </view>
       <!--其中一个  end-->
-      </scroll-view>
+    </scroll-view>
   </swiper-item>
 </swiper>

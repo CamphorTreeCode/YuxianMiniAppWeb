@@ -25,7 +25,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 18,
+			"current": 23,
 			"list": [
 				{
 					"id": 0,
@@ -139,6 +139,42 @@
 					"id": -1,
 					"name": "我的钱包",
 					"pathName": "pages/my/myWallet/myWallet",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的收藏",
+					"pathName": "pages/my/myCollection/myCollection",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/my/personData/personData",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的简历",
+					"pathName": "pages/my/myResume/myResume",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的申请分类",
+					"pathName": "pages/my/myApplyType/myApplyType",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "安全设置",
+					"pathName": "pages/my/securitySetting/securitySetting",
+					"query": ""
+				},
+				{
+					"id": 24,
+					"name": "测试支付",
+					"pathName": "pages/test/test",
 					"query": ""
 				}
 			]

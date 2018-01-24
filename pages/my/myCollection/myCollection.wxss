@@ -1,0 +1,57 @@
+/* pages/my/myCollection/myCollection.wxss */
+
+@import "/pages/index/wre/myTask/myTask";
+.selectAll{
+color:#FFD95E;
+border-bottom:0px solid #FFD95E;
+
+}
+.all{
+  margin-left: 0;
+  width:48%;
+ 
+}
+.topHead{
+  background: #F5F5F5;
+}
+.leftLine{
+border-left:1px solid #767676;
+height:59%;
+margin-top:2%;
+
+}
+.oneItem{
+  width:95%;
+margin:0 auto;
+margin-bottom:1.5%;
+
+}
+.taskTitle{
+  margin-left: 4%;
+  margin-top:0.5%;
+
+}
+.taskTime{
+  height: 40%;
+  line-height:61rpx;
+
+}
+.itemLeft{
+
+ height: 100%;
+ width:70%;
+}
+.itemRight{
+
+ height: 100%;
+ width:28%;
+}
+.examine {
+width: 91%;
+height:100%;
+ line-height: 150rpx;
+font-size: 0.9rem;
+margin-top:0%;
+
+
+}

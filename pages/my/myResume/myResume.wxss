@@ -1,0 +1,70 @@
+/* pages/my/myResume/myResume.wxss */
+
+page{
+  background: #F5F5F5;
+}
+.AboutUs {
+  height: 1000rpx;
+
+}
+
+.oneTilte {
+margin-bottom:1px;
+  background: #fff;
+  padding-left: 5%;
+
+  border-bottom: 0;
+  height: 10%;
+}
+.oneTilte .oneTilteName{
+  font-size: 0.9rem;
+  line-height:100rpx;
+    color: #6e6e6e;
+    height: 100%;
+}
+ .headLogo{
+margin-top:1.2%;
+height:83%;
+width:12%;
+
+background:#F5F5F5;
+text-align:center;
+border-radius:71%;
+
+
+
+ }
+ .headLogo image{
+height:87%;
+width:88%;
+margin-top:5%;
+border-radius:71%;
+
+
+
+ }
+.joinLogo{
+width:8%;
+height:65%;
+
+
+}
+.joinLogo image{
+width:76%;
+height:72%;
+margin-top:46%;
+margin-left:15%;
+
+
+}
+.oneContent{
+  line-height: 100rpx;
+  font-size: 0.9rem;
+  color:#363636;
+  font-weight: bold;
+  width:46%;
+text-align:right;
+ white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

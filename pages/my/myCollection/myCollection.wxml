@@ -1,0 +1,102 @@
+<!--pages/my/myCollection/myCollection.wxml-->
+<view class="topHead">
+  <view id="all" class="all  {{currentTab==0 ? 'selectAll' : ''}} lf" data-current="0" bindtap="selectType">兼职收藏</view>
+  <view class="leftLine lf"></view>
+  <view id="waitAudited" class="all  {{currentTab==1 ? 'selectAll' : ''}} lf" data-current="1" bindtap="selectType">任务收藏</view>
+
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{100-8.9}}vh" bindchange="bindChange">
+  <swiper-item class="allTypeTtem">
+
+    <!--全部的分类 strat  -->
+    <view class="bodyItem">
+      <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
+        <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">招聘生鲜蔬菜水果包装</view>
+            <view class="taskTime ">截至时间：长期</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              正在招</view>
+          </view>
+        </view>
+        <!--其中一个  end-->
+
+        <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">招聘物流园扫码人员</view>
+            <view class="taskTime ">截至时间：长期</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              正在招</view>
+          </view>
+        </view>
+        <!--其中一个  end-->
+
+  <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">干洗订单配送</view>
+            <view class="taskTime ">截至时间：长期</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              正在招</view>
+          </view>
+        </view>
+        <!--其中一个  end-->
+  <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">三菱空调包吃住</view>
+            <view class="taskTime ">截至时间：长期</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine" style='background:#999;'>
+              已招满</view>
+          </view>
+        </view>
+        <!--其中一个  end-->
+      </scroll-view>
+    </view>
+    <!--全部的分类 end  -->
+
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y style="height:{{100-8.9}}vh" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
+      <!--其中一个  strat-->
+  <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">干洗订单配送</view>
+            <view class="taskTime ">截至时间：长期</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine">
+              正在招</view>
+          </view>
+        </view>
+        <!--其中一个  end-->
+  <!--其中一个  strat-->
+        <view class="oneItem">
+          <view class="itemLeft lf">
+            <view class="taskTitle ">三菱空调包吃住</view>
+            <view class="taskTime ">截至时间：长期</view>
+          </view>
+          <view class="itemRight ri">
+            <view class="examine" style='background:#999;'>
+              已招满</view>
+          </view>
+        </view>
+        <!--其中一个  end-->
+      <!--其中一个  end-->
+
+
+    </scroll-view>
+  </swiper-item>
+  </swiper>

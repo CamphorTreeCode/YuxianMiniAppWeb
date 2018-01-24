@@ -1,11 +1,11 @@
-// pages/my/my.js
+// pages/my/securitySetting/securitySetting.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    isFocus: false,//控制input 聚焦
   },
 
   /**
@@ -63,24 +63,19 @@ Page({
   onShareAppMessage: function () {
   
   },
-  walletSelt:function(){
-    wx.navigateTo({
-      url: '/pages/my/myWallet/myWallet'
+  set_Focus() {//聚焦input
+    console.log('isFocus', this.data.isFocus)
+    this.setData({
+      isFocus: true
     })
   },
-  followSelt:function(){
-    wx.navigateTo({
-      url: '/pages/my/alreadyFollowBusiness/alreadyFollowBusiness'
-    })
-  },
-  myApply: function () {
-    wx.navigateTo({
-      url: '/pages/my/myApply/myApply'
-    })
-  },
-  feedback: function () {
-    wx.navigateTo({
-      url: '/pages/my/Feedback/Feedback'
-    })
-  },
+  set_wallets_password(e) {//获取钱包密码
+    console.log(e.detail.value)
+    this.setData({
+      wallets_password: e.detail.value
+    });
+    // if (this.data.wallets_password.length == 6) {//密码长度6位时，自动验证钱包支付结果
+    //   wallet_pay(this)
+    // }
+  }
 })

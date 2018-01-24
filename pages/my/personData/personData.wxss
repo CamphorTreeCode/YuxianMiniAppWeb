@@ -1,0 +1,108 @@
+/* pages/my/personData/personData.wxss */
+page{
+  background: #F5F5F5;
+}
+.Head {
+  height: 300rpx;
+  background: #ffd95e;
+  width: 100%;
+  position: relative;
+  z-index: -111
+}
+.Head .headLogo {
+height:65%;
+width:65%;
+margin:0px auto;
+margin-top:3%;
+z-index: 11;
+
+}
+
+.Head .headLogo .headLogoImg {
+  margin-top: 3%;
+height:73%;
+
+  width: 29%;
+  margin: 0px auto;
+  background: #fff;
+  text-align: center;
+  border-radius: 71%;
+}
+
+.Head .headLogo .headLogoImg image {
+  height: 93%;
+  width: 93%;
+  margin-top: 3%;
+  border-radius: 71%;
+}
+
+.Head .headLogo .headLogoName {
+   margin-top:1%;
+  color: #FAD874;
+  font-size: 0.9rem;
+  height: 20%;
+
+}
+.Head .headLogo .headLogoName .headLogoNames{
+    height: 100%;
+
+  font-size: 0.95rem;
+   text-align: right;
+width: 52%;
+line-height:47rpx;
+
+
+}
+.Head .headLogo  .DataSet{
+font-size: 0.7rem;
+height:100%;
+margin-left:7%;
+
+width: 30%;
+line-height:53rpx;
+
+}
+.Head .headLogo .autograph {
+  text-align: center;
+  color:#B2B2B2;
+  font-size: 0.8rem;
+  height: 20%;
+  line-height: 56rpx;
+  padding-left: 5%;
+  margin-top:2%;
+
+}
+
+.Head .headWallet {
+  height: 82%;
+  width: 100%;
+ position:absolute;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  bottom: 0%;
+
+   z-index:-1;
+}
+.DataBody .oneData{
+  height: 100rpx;
+ margin-top: 1px;
+ background: #fff;
+}
+.DataBody .oneData .oneDataName{
+  height: 100%;
+  line-height: 100rpx;
+  font-size: 1rem;
+  color:#757575;
+  width: 30%;
+  text-align: center;
+}
+.DataBody .oneData .oneDataValue{
+height:100%;
+line-height:100rpx;
+font-size:1rem;
+color:#3E3E3E;
+
+padding-left:17%;
+
+
+}
