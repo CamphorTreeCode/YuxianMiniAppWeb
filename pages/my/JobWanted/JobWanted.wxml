@@ -1,0 +1,122 @@
+<!--pages/my/JobWanted/JobWanted.wxml-->
+<view class="headTitle">设置求职意向，会按你的要求给你匹配合适的兼职</view>
+
+<view class="selectBody">
+  <!--选择工作  -->
+  <view class='MoonlightingBody'>
+    <view class="MoonlightingName">兼职类型（可多选）</view>
+    <view class="MoonlightingValue">
+
+      <view class="oneMoonLighting lf {{item.checked?'select':''}}" wx:for="{{Moonlighting}}" id="{{index}}" data-value="{{item.checked}}" bindtap='selectMoonLighting'>{{item.value}}</view>
+    </view>
+  </view>
+  <!--空闲时间啊  -->
+
+  <view class="freeTime cl">
+
+    <view class="freeTimeTitle">空闲时间（可多选）</view>
+    <view class="freeTimeValue">
+      <view class="oneFreeTime lf {{index>7?'heightFree':''}} {{index<8?'freeTop':'freeBack'}} {{index==0||index==8||index==16||index==24?'freeLeft':''}} " wx:for="{{freeTime}}" id="{{index}}" data-value="{{item.checked}}" bindtap="selectFreeTime" >
+        <view data-value="{{item.checked}}" class="{{item.checked==true&&index>8&&index!=16&&index!=24?'imgio':''}}">{{item.value}}</view>
+
+      </view>
+    </view>
+  </view>
+
+  <!--工作区域  -->
+  <view class='MoonlightingBody'>
+    <view class="MoonlightingName">工作区域（可多选）</view>
+    <view class="MoonlightingValue">
+
+      <view class="oneMoonLighting lf {{item.checked?'select':''}}" wx:for="{{cityNowList}}" id="{{index}}" data-value="{{item.checked}}" bindtap='workingArea'>{{item.name}}</view>
+    </view>
+  </view>
+  <!--输入框  -->
+  <view class="interest">
+    <view class="interestText">其他</view>
+    <view class="textar">
+      <textarea placeholder="若还有感兴趣的工作，你也可以告诉我们..." maxlength="140" name="textarea" placeholder-class="texta" bindinput="bindinput" />
+      <view class="fontNumber">还可以输入{{size}}字</view>
+    </view>
+  </view>
+  <!-- 期望工作类型-->
+  <view class="jobType">
+    <view class="jobTypeHead">
+      <view class="Asterisk lf">*</view>
+      <view class="jobTypeText">期望工作类型</view>
+    </view>
+    <view class="jobTypeHead">
+
+      <view class="whetherUnlimited lf">是否不限?</view>
+      <view class="falgSwitch ri">
+      <view class="Unlimited lf">按以下期望</view>
+        <switch class="lf" id="swithch1" bindchange="switch1Change" color="#FFD95E" checked="{{jobTypeSwitch}}"/>       <view class="noUnlimited lf">是</view>
+   
+      </view>
+    </view>
+
+    <view class="jobTypeHead cl">
+
+      <checkbox-group class="checkBoxs" >
+        <label class="checkbox lf" wx:for="{{typeJpb}}" catchtap="checkJobType" id="{{index}}" >
+          <checkbox  checked="{{item.checked}}" color="#FFD95E"  />{{item.value}}
+        </label>
+      </checkbox-group>
+    </view>
+  </view>
+  <!--期望工作时间  -->
+  <view class="jobType">
+    <view class="jobTypeHead">
+      <view class="Asterisk lf">*</view>
+      <view class="jobTypeText">期望工作时间</view>
+    </view>
+    <view class="jobTypeHead">
+
+      <view class="whetherUnlimited lf">是否不限?</view>
+      <view class="falgSwitch ri">
+        <view class="Unlimited lf">按以下期望</view>
+        <switch class="lf" id="swithch2" bindchange="switch1Change" color="#FFD95E" checked="{{timeTypeSwitch}}"/>
+     
+                 <view class="noUnlimited lf">是</view>
+      </view>
+    </view>
+
+    <view class="jobTypeHead cl">
+
+      <checkbox-group class="checkBoxs" bindchange="checkboxChange">
+        <label class="checkbox lf" wx:for="{{timeJpb}}" catchtap="checkTimeType" id="{{index}}">
+          <checkbox  checked="{{item.checked}}" color="#FFD95E" />{{item.value}}
+        </label>
+      </checkbox-group>
+    </view>
+  </view>
+  <!--可上班时间及全职  -->
+    <view class="jobType">
+    <view class="jobTypeHead">
+      <view class="Asterisk lf">*</view>
+      <view class="jobTypeText lf">可上班时间</view>
+           
+        <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+ 
+    <view class="jobTypeText qxz ri">请选择 
+    </view>
+    </view>
+    <view class="jobTypeHead fullall">
+      <view class="Asterisk lf">*</view>
+      <view class="jobTypeText full lf">是否可支持全职上班</view>
+      <view class="falgSwitch falglf ri">
+        <view class="Unlimited lf">否</view>
+        <switch class="lf" bindchange="switch1Change" color="#FFD95E" checked  />
+                <view class="noUnlimited lf">是</view>
+
+      </view>
+    </view>
+
+<button class="commitBut" bindtap="setDisabled">提交</button>
+  </view>
+
+  
+</view>
+

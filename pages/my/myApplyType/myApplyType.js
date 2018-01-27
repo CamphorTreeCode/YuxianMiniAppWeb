@@ -21,7 +21,8 @@ Page({
     console.log(app.globalData.winHeight)
     that.setData({
       winWidth: app.globalData.winWidth,
-      winHeight: app.globalData.winHeight
+      winHeight: app.globalData.winHeight,
+      currentTab: options.currentTab
     })
   },
 

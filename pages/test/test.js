@@ -1,5 +1,20 @@
 //index.js
+const date = new Date()
+const years = []
+const months = []
+const days = []
 
+for (let i = 1990; i <= date.getFullYear(); i++) {
+  years.push(i)
+}
+
+for (let i = 1; i <= 12; i++) {
+  months.push(i)
+}
+
+for (let i = 1; i <= 31; i++) {
+  days.push(i)
+}
 Page({
   data: {
     payment_mode: 1,//默认支付方式 微信支付
@@ -7,7 +22,14 @@ Page({
     balance:100,//余额
     actual_fee:20,//待支付
     wallets_password_flag:false,//密码输入遮罩
-  
+    years: years,
+    year: date.getFullYear(),
+    months: months,
+    month: 2,
+    days: days,
+    day: 2,
+    year: date.getFullYear(),
+    value: [9999, 1, 1],
   },
   //事件处理函数
  
@@ -57,6 +79,14 @@ Page({
   },
   pay() {//去支付
     pay(this)
+  },
+  bindChange: function (e) {
+    const val = e.detail.value
+    this.setData({
+      year: this.data.years[val[0]],
+      month: this.data.months[val[1]],
+      day: this.data.days[val[2]]
+    })
   }
 })
 /*-----------------------------------------------*/

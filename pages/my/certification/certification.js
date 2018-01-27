@@ -1,11 +1,18 @@
-// pages/my/securitySetting/securitySetting.js
+// pages/my/certification/certification.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isFocus: false,//控制input 聚焦
+    items: [
+      { name: 'Read', value: '在读', checked: 'checked'},
+      { name: 'graduation', value: '毕业'},
+    ],
+    schoolName:"点击选择",
+    entranceTime:'2013-01-01',
+    phoneNumber:"18110647040",
+    IdCard: ""
   },
 
   /**
@@ -63,19 +70,7 @@ Page({
   onShareAppMessage: function () {
   
   },
-  set_Focus() {//聚焦input
-    console.log('isFocus', this.data.isFocus)
-    this.setData({
-      isFocus: true
-    })
-  },
-  set_wallets_password(e) {//获取钱包密码
-    console.log(e.detail.value)
-    this.setData({
-      wallets_password: e.detail.value
-    });
-    // if (this.data.wallets_password.length == 6) {//密码长度6位时，自动验证钱包支付结果
-    //   wallet_pay(this)
-    // }
+  radioChange: function (e) {
+    console.log('checkbox发生change事件，携带value值为：', e.detail.value)
   }
 })

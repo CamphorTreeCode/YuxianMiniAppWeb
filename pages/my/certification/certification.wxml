@@ -1,0 +1,108 @@
+<!--pages/my/certification/certification.wxml-->
+<view class="headTitle">填写基本资料</view>
+<view class="formBody">
+  <view class="oneInput">
+    <view class="InputBody">
+      <view class="inputLableName lf">姓名</view>
+      <view class="inputValue lf">
+        <input placeholder='请输入真实姓名' placeholder-class='placehoCss'></input>
+      </view>
+    </view>
+  </view>
+  <view class="oneInput">
+    <view class="InputBody">
+      <view class="inputLableName lf">教育</view>
+      <view class="inputValue lf">
+        <radio-group class="radio-group" bindchange="radioChange" >
+          <label class="radio lf" wx:for="{{items}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" color="#FFD95E" />{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+    </view>
+  </view>
+  <view class="oneInput">
+    <view class="InputBody">
+      <view class="inputLableName lf">学校</view>
+      <view class="inputValue lf">
+        <view class="schoolTile lf">{{schoolName}}</view>
+        <view class="joinLogo ri">
+          <image src="/img/taskDetailsImg/go1.png"></image>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class="oneInput">
+    <view class="InputBody">
+      <view class="inputLableName lf">入学年份</view>
+      <view class="inputValue lf">
+        <view class="select lf">{{entranceTime}}</view>
+        <view class="joinLogo ri">
+          <image src="/img/taskDetailsImg/go1.png"></image>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="oneInput">
+    <view class="InputBody">
+      <view class="inputLableName lf">手机号码</view>
+      <view class="inputValue lf">
+        <view class="select lf">{{phoneNumber}}</view>
+        <view class="joinLogo ri">
+          <image src="/img/taskDetailsImg/go1.png"></image>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="oneInput">
+    <view class="InputBody">
+      <view class="inputLableName lf">身份证号码</view>
+      <view class="inputValue lf">
+        <input placeholder='请输入身份证号码' placeholder-class='placehoCss'></input>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="maxInput">
+    <view class="InputBody">
+      <view class="maxInputLableName lf">
+        <view class="LableTtile">上传证件照</view>
+        <view class="LableIoce">
+          <image class="simg" bindtap='chooseImg' src="/img/taskDetailsImg/sendImg.png"></image>
+        </view>
+      </view>
+      <view class="maxInputValue lf">
+        <view class="topsl">
+          <view class="topslLeft lf">示例图片</view>
+          <view class="topslRight lf">(学生证、校园卡或身份证)</view>
+        </view>
+        <view class="bottomSl">
+          <view class="bottomSImglLeft lf">
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516955799094&di=bc89bb1cdba57ef324223a4ec15412a9&imgtype=0&src=http%3A%2F%2Ftc.sinaimg.cn%2Fmaxwidth.800%2Ftc.service.weibo.com%2Fmmbiz_qpic_cn%2F7498c1b8a11b4eca3ae0293108cd32f8.jpg"></image>
+          </view>
+          <view class="bottomSImglRight lf">
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516956323578&di=f2c4cd74f0abb87da82849351a461062&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20160908%2Fbe0eae380fc84ba49c15a2bc40a83b89.jpeg"></image>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+
+</view>
+
+<view>
+   <view class="pour">
+     *注：我们会对您的资料进行隐私保护，绝对不会对外发布。
+   </view>
+  
+   <button class="commitBut" bindtap="setDisabled">提交</button>
+
+</view>

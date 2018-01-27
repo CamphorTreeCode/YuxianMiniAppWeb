@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  setting(){
+    wx.navigateTo({
+      url: '/pages/my/myWallet/securitySetting/securitySetting'
+    })
   }
 })

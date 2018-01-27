@@ -22,8 +22,12 @@
     "pages/my/personData/personData",
     "pages/my/myApplyType/myApplyType",
     "pages/my/myResume/myResume",
-    "pages/my/securitySetting/securitySetting",
-     "pages/test/test"
+    "pages/my/myWallet/securitySetting/securitySetting",
+     "pages/test/test",
+     "pages/test/picker/picker",
+     "pages/my/certification/certification",
+     "pages/my/JobWanted/JobWanted"
+     
   ],
   "window":{
   "backgroundTextStyle":"light",

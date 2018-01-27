@@ -1,0 +1,206 @@
+/* pages/my/securitySetting/securitySetting.wxss */
+page{
+  background: #F5F5F5;
+}
+.headTop{
+  height:100rpx;
+
+}
+.punlicHead{
+  width:35%;
+  font-size: 0.83rem;
+
+  margin-top: 5%;
+  color:#AFAFAF;
+  letter-spacing:3rpx;
+}
+.select{
+  color: #F5DB7A
+}
+.payPassword{
+
+  margin-left:4%;
+
+}
+.setSuccess{
+    width:23%;
+     
+}
+.show{
+  display:none;
+}
+
+.settingPassWord{
+  height: 200rpx;
+  
+}
+.settingPassWordName{
+height: 40%;
+width: 100%;
+color: #AFAFAF;
+font-size: 0.95rem;
+text-align: center;
+line-height: 78rpx;
+
+}
+
+.input-password-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+
+}
+
+
+.input-password-wrap .password_dot {
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color: #AFAFAF;
+box-sizing:border-box;
+width:14.5%;
+height:82%;
+
+background: #fff;
+margin-left:.8%;
+
+}
+
+ .input-password-wrap .password_dot i {
+  background: #000;
+  border-radius: 50%;
+  width: 20rpx;
+  height: 20rpx;
+}
+.input-content {
+  position: absolute;
+  opacity: 0;
+  left: -100%;
+  top: 600rpx;
+  background: #f56;
+  z-index: -999;
+}
+
+ .input-content.active {
+  z-index: -99;
+}
+ .commitExamine{
+  margin-top:30rpx;
+
+ }
+ .commitExamine button{
+  background: #FDD95E;
+
+  color: #fff;
+  width:95%;
+    border: 0px;
+    border-radius: 0px;
+ }
+  
+ button::after{
+border: none;
+}
+
+/*设置安全信息  start*/
+.security{
+  display:none;
+}
+.phoneNumber{
+
+  height: 100rpx;
+  background: #fff;
+}
+.phoneName{
+  line-height: 100rpx;
+  color: #B0B0B0;
+  font-size: 0.89rem;
+  margin-left: 4%;
+}
+.phoneNumberValue{
+  line-height: 100rpx;
+  color: #586DA0;
+    margin-left: 4%;
+      font-size: 0.89rem;
+}
+.realInformation{
+  height: 150rpx;
+  background: #fff;
+  margin-top:3%;
+
+}
+.realName{
+
+  height: 50%;
+}
+.realNames{
+  height: 100%;
+  line-height: 75rpx;
+    color: #B0B0B0;
+    margin-left: 4%;
+      font-size: 0.89rem;
+      width:34%;
+
+}
+.realNamesValue{
+      height: 100%;
+  line-height: 75rpx;
+  width: 62%;
+
+}
+.realNamesValue input{
+
+   height: 100%;
+}
+.realIdCard{
+
+    height: 50%;
+}
+.IdCardName{
+  width:34%;
+
+    height: 100%;
+  line-height: 75rpx;
+    color: #B0B0B0;
+    margin-left: 4%;
+      font-size: 0.89rem;
+}
+.IdCardNameValue{
+        height: 100%;
+  line-height: 75rpx;
+  width: 62%;
+}
+.IdCardNameValue input{
+
+   height: 100%;
+}
+/*设置安全信息  end*/
+/*设置成功  start*/
+.setSuccesss{
+  display: none;
+}
+.successLogo{
+  height: 350rpx;
+
+}
+.successImg{
+  height: 75%;
+
+}
+.successImg image{
+width:37%;
+height:96%;
+display:block;
+margin:0 auto;
+
+}
+.successName{
+text-align:center;
+color:#B0B0B0;
+font-size:1rem;
+letter-spacing:6rpx;
+line-height:60rpx;
+
+}
+/*设置成功  end*/

@@ -83,4 +83,50 @@ Page({
       url: '/pages/my/Feedback/Feedback'
     })
   },
+  collection(){
+    
+    wx.navigateTo({
+      url: '/pages/my/myCollection/myCollection'
+    })
+  },
+  myResume(){
+    wx.navigateTo({
+      url: '/pages/my/myResume/myResume'
+    })
+  },
+  
+registered(){
+    wx.navigateTo({
+      url: '/pages/my/myApplyType/myApplyType?currentTab=0'
+    })
+  }, 
+Employment(){
+  wx.navigateTo({
+    url: '/pages/my/myApplyType/myApplyType?currentTab=1'
+  })
+},
+  Posts(){
+    wx.navigateTo({
+      url: '/pages/my/myApplyType/myApplyType?currentTab=2'
+    }) 
+  },
+  Settlement(){
+    wx.navigateTo({
+      url: '/pages/my/myApplyType/myApplyType?currentTab=3'
+    }) 
+  },
+  myData(){
+    
+    wx.navigateTo({
+      url: '/pages/my/personData/personData'
+    }) 
+  },
+
+
+
+   certification(){
+     wx.navigateTo({
+       url: '/pages/my/certification/certification'
+     }) 
+   } 
 })

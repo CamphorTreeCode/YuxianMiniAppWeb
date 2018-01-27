@@ -1,0 +1,202 @@
+/* pages/my/certification/certification.wxss */
+page{
+
+}
+.headTitle{
+  height: 80rpx;
+  line-height: 80rpx;
+  color:#7F7F7F;
+    background: #F5F5F5;
+  font-size: .98rem;
+  padding-left: 3%
+}
+
+.formBody{
+  height: 800rpx;
+  border-top: 1rpx solid #E5E5E5;
+  background: #fff;
+
+}
+.oneInput{
+    width:96%;
+    height: 10%;
+    border-bottom: 1rpx solid #E6E6E6;
+    margin: 0 auto;
+}
+.InputBody{
+  height: 100%;
+  border-bottom:1rpx solid #E6E6E6;
+}
+.inputLableName{
+  height: 80%;
+  border-right: 1rpx solid #E6E6E6;
+  width: 29%;
+  text-align: center;
+  line-height: 64rpx;
+
+  font-size: 0.98rem;
+  color:#494746;
+  margin-top: 0.8%;
+}
+  .inputValue{
+    margin-top: 0.8%;
+    height: 80%;
+    width: 68%;
+
+  }
+   .inputValue input{
+     height: 100%;
+     line-height: 64rpx;
+     margin-left: 7%;
+  
+   }
+  .placehoCss {
+     line-height:64rpx; 
+     font-size:0.95rem;
+     
+
+   }
+   .radio{
+     height: 100%;
+     margin-left:6%;
+    font-size:0.95rem;
+    line-height:64rpx; 
+   }
+   .radio radio{
+margin-top:-2%;
+   }
+   .schoolTile{
+      font-size:0.95rem;
+    line-height:64rpx; 
+     margin-left: 7%;
+   }
+   .joinLogo{
+width:8%;
+height:65%;
+
+
+}
+.joinLogo image{
+width:84%;
+height:92%;
+margin-top:30%;
+margin-left:81%;
+
+
+}
+.select{
+      font-size:0.95rem;
+    line-height:64rpx; 
+     margin-left: 7%;
+}
+
+
+.maxInput{
+  height:36%;
+}
+.maxInputLableName{
+height:90%;
+border-right:1rpx solid #E6E6E6;
+width:33%;
+text-align:center;
+font-size:0.98rem;
+color:#494746;
+margin-top:2%;
+
+
+}
+.maxInputValue{
+
+height:90%;
+width:66%;
+margin-top:2%;
+}
+.LableTtile{
+height:19%;
+font-size:0.98rem;
+margin-top:2%;
+
+
+
+
+}
+
+.LableIoce{
+ height:55%;
+margin-top:5%;
+
+}
+.simg{
+height:113%;
+width:68%;
+margin-left:7%;
+margin-top:6%;
+
+ }
+ .topsl{
+height:19%;
+
+
+
+margin-top:1%;
+
+ }
+ .topsl .topslLeft{
+   height: 100%;
+  font-size: 0.98rem;
+  width:30%;
+  margin-left: 3%;
+  line-height: 54rpx;
+ }
+ .topslRight{
+    height: 100%;
+   font-size: 0.75rem;
+   width: 67%;
+   line-height:65rpx;
+
+ }
+ .bottomSl{
+height:55%;
+margin-top:6%;
+
+
+ }
+ .bottomSImglLeft{
+   height: 100%;
+   width: 50%;
+ }
+  .bottomSl .bottomSImglLeft image{
+height:110%;
+width:80%;
+
+margin-left:7%;
+
+
+  }
+   .bottomSImglRight{
+   height: 100%;
+   width: 50%;
+ }
+   .bottomSl .bottomSImglRight image{
+height:109%;
+width:92%;
+
+
+   }
+.pour{
+   font-size: 0.98rem;
+   width: 92%;
+   margin:0 auto;
+}
+.commitBut{
+  background:#FED85D;
+  color: #fff;
+  border: 0px;
+  border-radius: 0px;
+  width: 95%;
+  margin:0 auto;
+  margin-top: 4%;
+}
+button::after{
+border: none;
+}

@@ -94,6 +94,20 @@ function requst1(url, method, data = {}) {
     reject('fail')
   })
 }
+// 验证身份证
+function isIdCard(card){
+
+    // 身份证号码为15位或者18位，15位时全为数字，18位前17位为数字，最后一位是校验位，可能为数字或字符X  
+    var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+    if (reg.test(card) === false) {
+
+      return false;
+    
+  }  else{
+    return true;
+  }
+}
+
 //封装api
 function wxApi(){
   return { "login":"wxPromisify(wx.login)",}
@@ -103,5 +117,5 @@ module.exports = {
   wxPromisify: wxPromisify,
   requstGet: requstGet,
   requstPost: requstPost,
-  
+  isIdCard: isIdCard
 }

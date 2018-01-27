@@ -1,7 +1,7 @@
 <!--pages/my/Feedback/Feedback.wxml-->
 
 <view class="body">
-  <textarea placeholder="请输入你的意见..." maxlength="200" name="textarea"   placeholder-class="texta" bindinput="bindinput"/>
+  <textarea placeholder="请输入您的意见..." maxlength="200" name="textarea"   placeholder-class="texta" bindinput="bindinput"/>
   <view class="fontNumber">{{size}}</view>
 </view>
 <view class="camera">

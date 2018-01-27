@@ -1,0 +1,117 @@
+
+<!--pages/my/securitySetting/securitySetting.wxml-->
+
+<import src="../../../../components/toast/toast.wxml" />
+
+<template is="toast" data="{{ ...$wux.toast }}" />
+
+<view class="headTop">
+  <view class="punlicHead payPassword {{slect==1?'select':''}} lf">1 设置支付密码></view>
+  <view class="punlicHead securityInfo  {{slect==2?'select':''}} lf">2 填写安全信息></view>
+  <view class="punlicHead setSuccess {{slect==3?'select':''}} lf">3 设置成功</view>
+</view>
+<!--设置支付密码  start-->
+<view class="{{operation?'show':''}}" >
+  <view class="settingPassWord">
+    <view class="settingPassWordName">设置钱包支付密码</view>
+    <view id="setting" catchtap="set_Focus" class="input-password-wrap">
+      <view class="password_dot " style="border:{{isFocus?'0.5px solid #FDD95E;':'0.5px solid #F5F5F5;'}}">
+        <i wx:if="{{wallets_password.length>=1}}"></i>
+      </view>
+      <view class="password_dot" style="border:{{isFocus?'0.5px solid #FDD95E;':'0.5px solid #F5F5F5;'}}">
+        <i wx:if="{{wallets_password.length>=2}}"></i>
+      </view>
+    <view class="password_dot" style="border:{{isFocus?'0.5px solid #FDD95E;':'0.5px solid #F5F5F5;'}}">
+        <i wx:if="{{wallets_password.length>=3}}"></i>
+      </view>
+      <view class="password_dot" style="border:{{isFocus?'0.5px solid #FDD95E;':'0.5px solid #F5F5F5;'}}">
+        <i wx:if="{{wallets_password.length>=4}}"></i>
+      </view>
+    <view class="password_dot" style="border:{{isFocus?'0.5px solid #FDD95E;':'0.5px solid #F5F5F5;'}}">
+        <i wx:if="{{wallets_password.length>=5}}"></i>
+      </view>
+    <view class="password_dot" style="border:{{isFocus?'0.5px solid #FDD95E;':'0.5px solid #F5F5F5;'}}">
+        <i wx:if="{{wallets_password.length>=6}}"></i>
+      </view>
+    </view>
+
+    <input bindinput="set_wallets_password" class="input-content" password type="number" focus="{{isFocus}}" maxlength="6" />
+
+  </view>
+
+
+  <view class="settingPassWord">
+    <view class="settingPassWordName">确认钱包支付密码</view>
+    <view id="confirm" catchtap="set_Focus" class="input-password-wrap">
+    <view class="password_dot" style="border:{{isFocusConfirm?'0.5px solid #FDD95E;':'0.5px solid #F5F5F5;'}}">
+        <i wx:if="{{confirm_password.length>=1}}"></i>
+      </view>
+    <view class="password_dot" style="border:{{isFocusConfirm?'0.5px solid #FDD95E;':'0.5px solid #F5F5F5;'}}">
+        <i wx:if="{{confirm_password.length>=2}}"></i>
+      </view>
+    <view class="password_dot" style="border:{{isFocusConfirm?'0.5px solid #FDD95E;':'0.5px solid #F5F5F5;'}}">
+        <i wx:if="{{confirm_password.length>=3}}"></i>
+      </view>
+    <view class="password_dot" style="border:{{isFocusConfirm?'0.5px solid #FDD95E;':'0.5px solid #F5F5F5;'}}">
+        <i wx:if="{{confirm_password.length>=4}}"></i>
+      </view>
+    <view class="password_dot" style="border:{{isFocusConfirm?'0.5px solid #FDD95E;':'0.5px solid #F5F5F5;'}}">
+        <i wx:if="{{confirm_password.length>=5}}"></i>
+      </view>
+    <view class="password_dot" style="border:{{isFocusConfirm?'0.5px solid #FDD95E;':'0.5px solid #F5F5F5;'}}">
+        <i wx:if="{{confirm_password.length>=6}}"></i>
+      </view>
+    </view>
+
+    <input bindinput="set_confirm_password" class="input-content" password type="number" focus="{{isFocusConfirm}}" maxlength="6" />
+
+  </view>
+
+
+  <view class="commitExamine">
+    <button>下一步</button>
+  </view>
+</view>
+<!--设置支付密码  end>
+<!--设置安全信息  start-->
+<view class="{{security?'security':''}}">
+  <view class="phoneNumber">
+     <view class="phoneName lf">目前绑定的手机是</view>
+     <view class="phoneNumberValue lf">13482486131</view>
+  </view>
+    
+    <view class="realInformation">
+         <view class="realName">
+            <view class="realNames lf">真是姓名</view>
+            <view class="realNamesValue lf">
+            <input placeholder="请输入您的真是姓名" placeholder-style="  font-size: 0.85rem;color:#D5D5D5" bindinput='bindinputRealName'></input>
+            </view>
+         </view>
+
+           <view class="realIdCard">
+            <view class="IdCardName lf">身份证号码</view>
+            <view class="IdCardNameValue lf">
+            <input placeholder="请输入您绑定的身份证号码"  placeholder-style="  font-size: 0.85rem;color:#D5D5D5" bindinput='bindinputIdCard'></input>
+            </view>
+         </view>
+    </view>
+
+  <view class="commitExamine">
+    <button>下一步</button>
+  </view>
+</view>
+<!--设置安全信息  end>
+<!--设置成功  start  -->
+<view class="{{setSuccess?'setSuccesss':''}}">
+  <view class="successLogo">
+       <view class="successImg">
+        <image src="/img/myImg/setSuccess.png"></image>
+       </view>
+       <view class="successName">恭喜您设置成功</view>
+  </view>
+
+    <view class="commitExamine" bindtap='backMyWallet'>
+    <button>返回我的钱包</button>
+  </view>
+</view>
+<!--设置成功  end  -->

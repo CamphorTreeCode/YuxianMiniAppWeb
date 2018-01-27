@@ -161,6 +161,7 @@ function getLocationDetails(that , resolve) {
           success: function (res) {
             //
            res.result[0].push({id:-1,name:"不限"})
+          
            console.log(res.result[0])
             that.setData({
               location: city,

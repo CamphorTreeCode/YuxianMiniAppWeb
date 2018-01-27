@@ -1,100 +1,132 @@
 <!--pages/my/my.wxml-->
 <view class="Head">
- <view class="headLogo">
-   <view class="headLogoImg">
-    <image src="http://upload.ouliu.net/i/20180120112029lrtlg.jpeg"></image>
-   </view>
-   <view class="headLogoName">菜小⑦</view>
+  <view class="headLogo">
+    <view class="headLogoImg" bindtap='myData'>
+      <image src="http://upload.ouliu.net/i/20180120112029lrtlg.jpeg"></image>
+    </view>
+    <view class="headLogoName">菜小⑦</view>
     <view class="autograph">加油，努力！！</view>
- </view>
- <view class="headWallet" style=" background-image:url('http://upload.ouliu.net/i/20180120111743rji2g.png')">
+  </view>
+  <view class="headWallet" style=" background-image:url('http://upload.ouliu.net/i/20180120111743rji2g.png')">
 
-<view class="headWalletBody">
-   <view class="wallet lf" bindtap='walletSelt'>
-    <view class="walletImg lf">
-     <image src="/img/myImg/wallet.png"></image> 
-    </view>
-    <view class="walletName lf">钱包</view>
-   </view>
-  
-   <view class="wallet lf">
-    <view class="walletImg collectionImg lf">
-     <image src="/img/myImg/collection.png"></image> 
-    </view>
-    <view class="walletName collectionName lf">收藏</view>
-   </view> 
+    <view class="headWalletBody">
+      <view class="wallet lf" bindtap='walletSelt'>
+        <view class="walletImg lf">
+          <image src="/img/myImg/wallet.png"></image>
+        </view>
+        <view class="walletName lf">钱包</view>
+      </view>
 
-   <view class="wallet lf"  bindtap='followSelt'>
-    <view class="walletImg followImg lf">
-      <image src="/img/myImg/follow.png"></image> 
+      <view class="wallet lf" bindtap='collection'>
+        <view class="walletImg collectionImg lf">
+          <image src="/img/myImg/collection.png"></image>
+        </view>
+        <view class="walletName collectionName lf">收藏</view>
+      </view>
+
+      <view class="wallet lf" bindtap='followSelt'>
+        <view class="walletImg followImg lf">
+          <image src="/img/myImg/follow.png"></image>
+        </view>
+        <view class="walletName followName lf">关注</view>
+      </view>
     </view>
-    <view class="walletName followName lf">关注</view>
-   </view> 
+  </view>
 </view>
- </view>
+
+<view class="myApply">
+  <view class="myApplyTilte " catchtap ='myApply'>
+    <view class="myApplyTilteName lf">我的申请</view>
+    <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+  </view>
+  <view class="myApplyFunction">
+    <view class="oneFunction lf"  catchtap='registered'>
+      <view class="oneFunctionImg">
+        <image src="/img/myImg/alreadyJoin.png"></image>
+      </view>
+      <view class="onefunctionName">已报名</view>
+    </view>
+
+    <view class="oneFunction lf" catchtap='Employment'>
+      <view class="oneFunctionImg">
+        <image src="/img/myImg/alreadyHired.png"></image>
+      </view>
+      <view class="onefunctionName">已录用</view>
+    </view>
+
+    <view class="oneFunction lf"  catchtap='Posts'>
+      <view class="oneFunctionImg">
+        <image src="/img/myImg/alreadyWork.png"></image>
+      </view>
+      <view class="onefunctionName">已到岗</view>
+    </view>
+
+    <view class="oneFunction fourfun lf"  catchtap='Settlement'>
+      <view class="oneFunctionImg">
+        <image src="/img/myImg/alreadySettled.png"></image>
+      </view>
+      <view class="onefunctionName">已结算</view>
+    </view>
+  </view>
 </view>
 
- <view class="myApply">
-  <view class="myApplyTilte " bindtap='myApply'>
-  <view class="myApplyTilteName lf">我的申请</view>
-  <view class="joinLogo ri"> <image src="/img/taskDetailsImg/go1.png"></image></view>
-   </view>
+<view class="myApply">
+  <view class="myApplyTilte" >
+    <view class="myApplyTilteName lf">我的简历（80%）</view>
+  </view>
   <view class="myApplyFunction">
+    <view class="oneFunction lf" catchtap='myResume'>
+      <view class="oneFunctionImg">
+        <image src="/img/myImg/resume.png"></image>
+      </view>
+      <view class="onefunctionName">简历资料</view>
+    </view>
+
     <view class="oneFunction lf">
-    <view class="oneFunctionImg"><image src="/img/myImg/alreadyJoin.png"></image></view>
-    <view class="onefunctionName">已报名</view>
+      <view class="oneFunctionImg">
+        <image src="/img/myImg/Jobcard.png"></image>
+      </view>
+      <view class="onefunctionName">职位卡</view>
     </view>
 
-        <view class="oneFunction lf">
-    <view class="oneFunctionImg"><image src="/img/myImg/alreadyHired.png"></image></view>
-    <view class="onefunctionName">已录用</view>
+    <view class="oneFunction lf"  catchtap='certification'>
+      <view class="oneFunctionImg">
+        <image src="/img/myImg/certification.png"></image>
+      </view>
+      <view class="onefunctionName">实名认证</view>
     </view>
 
-        <view class="oneFunction lf">
-    <view class="oneFunctionImg"><image src="/img/myImg/alreadyWork.png"></image></view>
-    <view class="onefunctionName">已到岗</view>
-    </view>
-
-        <view class="oneFunction fourfun lf">
-    <view class="oneFunctionImg"><image src="/img/myImg/alreadySettled.png"></image></view>
-    <view class="onefunctionName">已结算</view>
+    <view class="oneFunction fourfun lf">
+      <view class="oneFunctionImg">
+        <image src="/img/myImg/jobSetting.png"></image>
+      </view>
+      <view class="onefunctionName">求职设置</view>
     </view>
   </view>
- </view>
+</view>
 
-  <view class="myApply">
-  <view class="myApplyTilte">
-    <view class="myApplyTilteName lf">我的简历（80%）</view></view>
-  <view class="myApplyFunction">
-    <view class="oneFunction lf">
-    <view class="oneFunctionImg"><image src="/img/myImg/resume.png"></image></view>
-    <view class="onefunctionName">简历资料</view>
-    </view>
-
-        <view class="oneFunction lf">
-    <view class="oneFunctionImg"><image src="/img/myImg/Jobcard.png"></image></view>
-    <view class="onefunctionName">职位卡</view>
-    </view>
-
-        <view class="oneFunction lf">
-    <view class="oneFunctionImg"><image src="/img/myImg/certification.png"></image></view>
-    <view class="onefunctionName">实名认证</view>
-    </view>
-
-        <view class="oneFunction fourfun lf">
-    <view class="oneFunctionImg"><image src="/img/myImg/jobSetting.png"></image></view>
-    <view class="onefunctionName">求职设置</view>
+<view class="AboutUs">
+  <view class="oneTilte">
+    <view class="oneTilteName lf">邀请奖金</view>
+    <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
     </view>
   </view>
- </view>
-
-  <view class="AboutUs">
-    <view class="oneTilte"><view class="oneTilteName lf">邀请奖金</view>
-      <view class="joinLogo ri"> <image src="/img/taskDetailsImg/go1.png"></image></view>
+  <view class="oneTilte">
+    <view class="oneTilteName lf">联系我们</view>
+    <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
     </view>
-      <view class="oneTilte"><view class="oneTilteName lf">联系我们</view>
-      <view class="joinLogo ri"> <image src="/img/taskDetailsImg/go1.png"></image></view></view>
-        <view class="oneTilte" bindtap='feedback'><view class="oneTilteName lf">意见反馈</view>
-      <view class="joinLogo ri"> <image src="/img/taskDetailsImg/go1.png"></image></view></view>
-          <view class="oneTilte"><view class="oneTilteName lf">关于我们</view></view>
   </view>
+  <view class="oneTilte" bindtap='feedback'>
+    <view class="oneTilteName lf">意见反馈</view>
+    <view class="joinLogo ri">
+      <image src="/img/taskDetailsImg/go1.png"></image>
+    </view>
+  </view>
+  <view class="oneTilte">
+    <view class="oneTilteName lf">关于我们</view>
+  </view>
+</view>

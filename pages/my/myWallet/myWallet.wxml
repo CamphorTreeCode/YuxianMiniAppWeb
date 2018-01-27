@@ -9,7 +9,7 @@
   <view class="walletName ri">钱包余额（元）</view>
   <view class="walletReflect cl">
    <view class="walletReflectBut lf">提现</view>
-   <view class="setting lf">设置</view>
+   <view class="setting lf" bindtap='setting'>设置</view>
   </view>
 </view>
 
