@@ -1,4 +1,5 @@
-<!--pages/my/JobWanted/JobWanted.wxml-->
+<import src="../../../components/picker/picker.wxml"/>
+<template is="picker" data="{{ ...$wux.picker.phone }}"/>
 <view class="headTitle">设置求职意向，会按你的要求给你匹配合适的兼职</view>
 
 <view class="selectBody">
@@ -96,11 +97,11 @@
       <view class="Asterisk lf">*</view>
       <view class="jobTypeText lf">可上班时间</view>
            
-        <view class="joinLogo ri">
+        <view class="joinLogo ri"  bindtap="onTapPhone">
       <image src="/img/taskDetailsImg/go1.png"></image>
     </view>
  
-    <view class="jobTypeText qxz ri">请选择 
+    <view class="jobTypeText qxz ri {{selectPricker!='请选择'?'pickercss':''}}"  bindtap="onTapPhone">{{selectPricker}} 
     </view>
     </view>
     <view class="jobTypeHead fullall">

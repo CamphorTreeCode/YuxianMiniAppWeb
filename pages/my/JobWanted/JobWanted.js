@@ -1,5 +1,6 @@
 // pages/my/JobWanted/JobWanted.js
 var check = require('../../../utils/authorizationCheck.js');
+import { $wuxPicker} from '../../../components/wux'
 Page({
 
   /**
@@ -74,7 +75,8 @@ Page({
   jobTypeSwitch:true,
   timeTypeSwitch:true,
   arrayTime: ['均可', '每周1天', '每周2天', '每周3天', '每周4天', '每周5天', '每周6天'],
-  index:0
+  index:0,
+  selectPricker:'请选择'
   },
 
 
@@ -295,4 +297,25 @@ Page({
       index: e.detail.value
     })
   },
+  // picker
+   onTapPhone() {
+     $wuxPicker.init('phone', {
+       title: "请选择您的上班时间",
+       cols: [
+         {
+           textAlign: 'center',
+           values: ['均可', '每周1天', '每周2天', '每周3天', '每周4天', '每周5天','每周6天'],
+           // displayValues: [1, 2, 3, 4, 5, 6]
+         }
+       ],
+       value: [0],
+       onChange(p) {
+         console.log(p)
+         this.setData({
+           selectPricker: p.value
+           
+         })
+       },
+     })
+   },
 })

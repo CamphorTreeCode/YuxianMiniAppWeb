@@ -98,7 +98,7 @@
       <view class="onefunctionName">实名认证</view>
     </view>
 
-    <view class="oneFunction fourfun lf">
+    <view class="oneFunction fourfun lf" catchtap='jobset'>
       <view class="oneFunctionImg">
         <image src="/img/myImg/jobSetting.png"></image>
       </view>

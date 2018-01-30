@@ -82,10 +82,11 @@ background-position:5.5rpx 29rpx;
 }
 
 .heightFree view {
-  width: 85%;
-  line-height: 40rpx;
-  padding-top: 23%;
-  margin-left: 6%;
+width:72%;
+line-height:40rpx;
+padding-top:23%;
+margin-left:11%;
+
 }
 
 .freeBack {
@@ -273,4 +274,7 @@ margin-top:41.5%;
 margin-left:15%;
 
 
+}
+.pickercss{
+  color: #333333;
 }

@@ -11,7 +11,7 @@
 // import $wuxKeyBoard from 'keyboard/keyboard'
 // import $wuxLoading from 'loading/loading'
 // import $wuxNotification from 'notification/notification'
-// import $wuxPicker from 'picker/picker'
+ import $wuxPicker from 'picker/picker'
 // import $wuxPickerCity from 'picker-city/picker-city'
 // import $wuxPrompt from 'prompt/prompt'
 // import $wuxQrcode from 'qrcode/qrcode'
@@ -36,7 +36,7 @@ export {
     // $wuxKeyBoard,
     // $wuxLoading,
     // $wuxNotification,
-    // $wuxPicker,
+  $wuxPicker,
     // $wuxPickerCity,
     // $wuxPrompt,
     // $wuxQrcode,

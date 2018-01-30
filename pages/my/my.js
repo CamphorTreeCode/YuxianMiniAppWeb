@@ -128,5 +128,10 @@ Employment(){
      wx.navigateTo({
        url: '/pages/my/certification/certification'
      }) 
-   } 
+   } ,
+   jobset(){
+     wx.navigateTo({
+       url: '/pages/my/JobWanted/JobWanted'
+     }) 
+   }
 })
