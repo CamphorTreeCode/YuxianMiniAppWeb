@@ -2,9 +2,9 @@
 <view class="Head">
   <view class="headLogo">
     <view class="headLogoImg" bindtap='myData'>
-      <image src="http://upload.ouliu.net/i/20180120112029lrtlg.jpeg"></image>
+      <image src="{{avatarUrl}}"></image>
     </view>
-    <view class="headLogoName">菜小⑦</view>
+    <view class="headLogoName">{{nickName}}</view>
     <view class="autograph">加油，努力！！</view>
   </view>
   <view class="headWallet" style=" background-image:url('http://upload.ouliu.net/i/20180120111743rji2g.png')">
