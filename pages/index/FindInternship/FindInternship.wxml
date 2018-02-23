@@ -1,5 +1,6 @@
 <!--pages/index/FindInternship/FindInternship.wxml-->
 <!--选择下拉列表名称   start-->
+
 <view class="select ">
   <view id="allType" class="AllType {{shownavindex == 1? 'active' : ''}} lf" bindtap='allType' data-nav="1">{{allType}}
     <view class="icon"></view>
@@ -19,8 +20,9 @@
 </view>
 <!--选择显示全部岗位 end  -->
 <!--选择显示位置 strat  -->
+
 <view class="locationNow {{nowLocationFlag ? 'slidown' : 'slidup'}} {{nowLocationShow?'selectShow':''}}" data-city="{{nowLocationFlag}}">
-  <view class="selctAllTypeList lf {{index==selectNowLocationIndex?'stl':''}}" wx:for="{{cityNowList}}" bindtap="locationNow" data-name='{{item.name}}' data-task='{{index}}' wx:key="unique">{{item.name}}</view>
+  <view class="selctAllTypeList lf {{index==selectNowLocationIndex?'stl':''}}" wx:for="{{cityNowList}}" bindtap="locationNow" data-name='{{item.fullname}}' data-task='{{index}}' wx:key="unique">{{item.fullname}}</view>
 
 </view>
 <!--选择显示位置 end  -->
@@ -32,6 +34,7 @@
 <!--选择显示月薪 end  -->
 <!----选择下拉列表 end  -->
 <!--商品列表   start-->
+
 <view class="store">
   <scroll-view scroll-y style="height:{{100-8.5}}vh" scroll-into-view="{{toView}}">
     <view class="storeItem">

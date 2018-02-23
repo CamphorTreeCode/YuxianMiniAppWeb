@@ -29,7 +29,7 @@
     <view class="MoonlightingName">工作区域（可多选）</view>
     <view class="MoonlightingValue">
 
-      <view class="oneMoonLighting lf {{item.checked?'select':''}}" wx:for="{{cityNowList}}" id="{{index}}" data-value="{{item.checked}}" bindtap='workingArea'>{{item.name}}</view>
+      <view class="oneMoonLighting lf {{item.checked?'select':''}}" wx:for="{{cityNowList}}" id="{{index}}" data-value="{{item.checked}}" bindtap='workingArea'>{{item.fullname}}</view>
     </view>
   </view>
   <!--输入框  -->

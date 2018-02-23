@@ -160,7 +160,7 @@ function getLocationDetails(that , resolve) {
           id: cityId, // 对应城市ID
           success: function (res) {
             //
-           res.result[0].push({id:-1,name:"不限"})
+            res.result[0].push({ id: -1, fullname:"不限"})
           
            console.log(res.result[0])
             that.setData({

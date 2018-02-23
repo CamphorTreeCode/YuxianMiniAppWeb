@@ -103,6 +103,7 @@ Page({
     //点击全部职位
   allType:function(e){
     console.log(e);
+
     var that = this;
     if (that.data.alltypeFlag) {
       that.setData({

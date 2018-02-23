@@ -19,7 +19,7 @@
 <!--选择显示全部岗位 end  -->
 <!--选择显示位置 strat  -->
 <view class="locationNow {{nowLocationFlag ? 'slidown' : 'slidup'}} {{nowLocationShow?'selectShow':''}}" data-city="{{nowLocationFlag}}">
-  <view class="selctAllTypeList lf {{index==selectNowLocationIndex?'stl':''}}" wx:for="{{cityNowList}}" bindtap="locationNow" data-name='{{item.name}}' data-task='{{index}}' wx:key="unique">{{item.name}}</view>
+  <view class="selctAllTypeList lf {{index==selectNowLocationIndex?'stl':''}}" wx:for="{{cityNowList}}" bindtap="locationNow" data-name='{{item.fullname}}' data-task='{{index}}' wx:key="unique">{{item.fullname}}</view>
 </view>
 <!--选择显示位置 end  -->
 <!--选择显示月薪 strat  -->

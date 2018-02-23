@@ -10,12 +10,12 @@
 }
 
 .MoonlightingBody {
-  height: 450rpx;
+
   margin-top: 30rpx;
 }
 
 .MoonlightingName {
-  height: 19%;
+  height: 80rpx;
   line-height: 80rpx;
   padding-left: 3%;
 }
@@ -29,7 +29,7 @@
   width: 21.6%;
   background: #f3f3f3;
   text-align: center;
-  height: 16%;
+  height: 60rpx;
   color: #595959;
   font-size: 0.88rem;
   margin: 1.2% 1.3%;
@@ -68,7 +68,7 @@
 }
 .imgio{
 
-background-image:url('http://upload.ouliu.net/i/20180127165827o7e8g.png');
+background-image:url('http://chuantu.biz/t6/230/1518618893x-1404758413.png');
 background-size:91% 45%;
 background-repeat:no-repeat;
 height:100%;
@@ -82,10 +82,11 @@ background-position:5.5rpx 29rpx;
 }
 
 .heightFree view {
-width:72%;
+width:85%;
 line-height:40rpx;
 padding-top:23%;
-margin-left:11%;
+margin-left:5%;
+
 
 }
 
@@ -107,6 +108,8 @@ margin-left:11%;
   margin-top: 5%;
   height: 400rpx;
   margin-bottom: 2%;
+  clear:both;
+
 }
 
 .interestText {
