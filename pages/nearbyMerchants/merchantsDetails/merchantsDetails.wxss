@@ -1,0 +1,221 @@
+/* pages/nearbyMerchants/merchantsDetails/merchantsDetails.wxss */
+page {
+  background: #E4E1E0;
+}
+
+.shopImgTop{
+height:400rpx;
+overflow:hidden;
+
+}
+.shopImgTop image{
+  width: 100%;
+  height:100%;
+}
+.taskPrice{
+
+  height: 105rpx;
+
+background:#fff;
+
+}
+.taskBoder{
+  border-top: 1rpx solid #E4E1E0;
+  border-bottom: 1rpx solid #E4E1E0;
+}
+.taskPriceLogo{
+  height: 100%;
+  width:13%;
+  margin-left:6%;
+  
+
+}
+.taskPriceLogo image{
+width:85%;
+height:80%;
+
+margin-top:10%;
+
+
+}
+.price{
+
+  height: 100%;
+  color: #FFD95E;
+  font-size: 1.2rem;
+  line-height:105rpx;
+
+}
+.SurplusNumber{
+
+  height: 100%;
+  width: 25%;
+  color: #929292;
+  font-size: .8rem;
+  line-height: 105rpx;
+}
+.taskDetailsList{
+  margin-top: 3rpx;
+  
+  height: 165rpx;
+  background: #fff;
+  margin-bottom:1.5%;
+
+}
+.taskDetailsListItem{
+
+width:39%;
+
+
+
+  height: 100%;
+}
+.taskdetailsListItemLogo {
+ 
+height:32%;
+
+}
+.taskListLogo{
+
+height:100%;
+width:20%;
+text-align:center;
+
+
+}
+ .taskListLogo image{
+width:71%;
+height:70%;
+
+
+
+}.taskdetailsListItemText{
+width:65%;
+font-size:0.8rem;
+color:#898989;
+margin-top:1.0%;
+
+
+margin-left:4%;
+
+}
+.detalisOne{
+  margin-left:17%;
+
+}
+.taskOne{
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+
+.textTop{
+  margin-top: 1%;
+}
+.textBottom{
+  margin-bottom: 1.5%;
+}
+.stepimg{
+  width:100% ;
+  height: 100%
+}
+.taskContentText{
+background: #fff;
+margin-top:1px;
+color: #9D9D9D;
+font-size: 0.8rem;
+padding:3%;
+
+}
+.activitieDetails{
+  background: #fff;
+  height: 200rpx;
+  
+}
+.titleLeft{
+  width: 25%;
+  height: 100%;
+  background: #fff;
+  font-size: 1rem;
+  color: #818181;
+  border-right: 4rpx solid #EFEFEF;
+  text-align: center;
+  line-height:57rpx;
+
+}
+.valueRight{
+  width: 68%;
+  background: #fff;
+  font-size: 0.9rem;
+  color:#D0D0D0;
+  margin-left: 5%;
+}
+.contact{
+
+  background: #fff;
+  border-bottom: 1rpx solid #E4E1E0;
+}
+.contactNumber{
+  color: #EFB601;
+  font-size: 1rem;
+  margin-left:18%;
+
+}
+.contactPrompt{
+  color:#9E9D9D;
+  font-size: 0.8rem;
+  margin-left:18%;
+}
+/**感兴趣的用户 */
+.interestUser .userHeadLogo{
+  
+     width:95%;
+margin-left:4.5%;
+
+height:46%;
+
+   }
+  .interestUser .userHeadLogo  .userHeadLogoImg{
+    height: 100%;
+    width: 15%;
+
+    margin-right:1.6%;
+margin-top:3.5%;
+
+  }
+  .interestUser .userHeadLogo  .userHeadLogoImg  .more{
+    height:86%;
+width:86%;
+background:#CCCCCC;
+
+   border-radius:50%;
+
+  }
+    .interestUser .userHeadLogo  .userHeadLogoImg  .more .moreLine{
+   height:8rpx;
+width:8rpx;
+background:#666;
+border-radius:51%;
+margin-top:45%;
+margin-right:11%;
+
+  }
+   .interestUser .userHeadLogo  .userHeadLogoImg  .more .lineOne{
+     margin-left:29%
+   }
+    .interestUser .userHeadLogo  .userHeadLogoImg image{
+height:86%;
+width:86%;
+
+   border-radius:50%;
+
+  }
+   .interestUser{
+
+   height: 226rpx;
+   width:100%;
+   background: #fff;
+
+ }
+ .userLine{
+     border-bottom: 1rpx solid #E4E1E0;
+ }

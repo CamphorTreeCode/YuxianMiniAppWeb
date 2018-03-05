@@ -1,5 +1,41 @@
 <!--pages/nearbyMerchants/nearbyMerchants.wxml-->
 <!--搜索  strar-->
+<view class="nearSearch">
+<view class="searchBody">
+<icon type="search" size="15" color="#888" style="float:left;margin-right:20rpx;"></icon>
+<input placeholder="按门店或者行业名称进行搜索"></input>
+</view>
+</view>
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view wx:for="{{salaryList}}" class="tab-item {{currentTab==index?'active':''}} "  data-current="{{index}}" bindtap="swichNav">{{item}}</view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{100-17.7}}vh">
+        <swiper-item wx:for="{{[0,1,2,3,4,5,6,7,8,9]}}">
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <block wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key="*this">
+                    <view class="item-ans">
+                        <view class="expertInfo">
+                         <view class="storeBody">
+                            <view class="storeName lf">荣盛时尚KTV（松江店）</view>
+                            <view class="storeAddress ri">松江</view>
+                        </view>
+                   
+                            <view class="Price cl">58元起</view>
+                                 <view class="position">
+                                 <view class="lf">
+                            <view class="address">上海市松江区广富林路松江万达广场</view>                         
+                            <view class="distance">距离我4.78KM</view>
+                            </view>
+                               <view class="join ri">点击查看></view>
+                             </view>
+                        </view>
+  
+                    </view>
+                </block>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
 <!--搜索  end-->
 <!--选择  start  -->
 <!--选择  end  -->

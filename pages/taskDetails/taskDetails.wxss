@@ -89,20 +89,21 @@ height:70%;
 width:65%;
 font-size:0.8rem;
 color:#898989;
-margin-top:-0.5%;
+margin-top:1.0%;
 
 
 margin-left:4%;
+
+}
+.detalisOne{
+  margin-left:17%;
 
 }
 .taskOne{
   margin-top: 10%;
   margin-bottom: 2%;
 }
-.detalisOne{
-  margin-left:17%;
 
-}
 .textTop{
   margin-top: 1%;
 }

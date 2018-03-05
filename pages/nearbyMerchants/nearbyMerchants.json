@@ -1,1 +1,6 @@
-{}
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#FFD95E",
+  "navigationBarTitleText": "附近商家",
+  "navigationBarTextStyle": "white"
+}

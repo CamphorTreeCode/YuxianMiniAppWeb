@@ -1,7 +1,4 @@
-<!--pages/taskDetails/taskDetails.wxml-->
-<import src="/wxParse/wxParse.wxml" />
-
-
+<!--pages/nearbyMerchants/merchantsDetails/merchantsDetails.wxml-->
 <view class="shopImgTop">
   <image src="/img/taskDetailsImg/taskbanner.png"></image>
 </view>
@@ -56,23 +53,54 @@
     </view>
   </view>
 </view>
+<!--活动详情 activitieDetails -->
 
 <view class="taskPrice contentText">
   <view class="taskPriceLogo lf">
     <image class="stepimg" src="/img/taskDetailsImg/step.png"></image>
   </view>
-  <view class="price lf">任务步骤</view>
-
-</view>
-<view class="taskContentText">
-  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  <view class="price lf">活动介绍</view>
 </view>
 
-<view class="menuTask lf">
-  <view class="TaskCommit lf" bindtap='taskCommit'>任务提交</view>
-  <view bindtap='shareTask'>
-    <button class="shareTask ri" open-type="share">
-      分享
-    </button>
+<view class="activitieDetails">
+<view class="titleLeft lf">
+  活动详情
+</view>
+<view class="valueRight lf">
+预约赠送欢唱劵一张！免费WIFI,免费停车！
+</view>
+</view>
+<!--联系商家  -->
+<view class="taskPrice contentText taskBoder">
+  <view class="taskPriceLogo lf">
+    <image class="stepimg" src="/img/taskDetailsImg/step.png"></image>
   </view>
+  <view class="price lf">联系商家</view>
 </view>
+<view class="contact">
+  <view class="contactNumber">13641982565</view>
+  <view class="contactPrompt">提示：凡收取额外费用的需要谨慎</view>
+</view>
+
+<!--感兴趣的用户  -->
+<view class="taskPrice contentText userLine">
+  <view class="taskPriceLogo lf">
+    <image class="stepimg" src="/img/taskDetailsImg/7.png"></image>
+  </view>
+  <view class="price lf">感兴趣的用户</view>
+</view>
+   <view class="interestUser">
+
+      <view class="userHeadLogo">
+        <view class="userHeadLogoImg lf" wx:for="{{headImg}}">
+          <image src="{{item}}"></image>
+        </view>
+        <view class="userHeadLogoImg lf">
+          <view class="more">
+            <view class="moreLine lineOne lf"></view>
+            <view class="moreLine lf"></view>
+            <view class="moreLine lf"></view>
+          </view>
+        </view>
+      </view>
+    </view>
