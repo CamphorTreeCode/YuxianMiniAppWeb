@@ -1,0 +1,46 @@
+<!--pages/taskHand/joinDetails/joinDetaila.wxml-->
+<view class="joinMarginTOp">
+  <view class="joinBody">
+
+    <view id="select1" class="gender" bindtap='clickJoin'>
+      <view class="joinName lf">性别</view>
+      <view  class="joinValue lf">{{joinArr[0][info1].checked?joinArr[0][info1].value:'请选择'}}</view>
+      <view class="joinLogo ri">
+        <image src="/img/taskDetailsImg/go1.png"></image>
+      </view>
+
+    </view>
+    <view id="select2" bindtap='clickJoin' class="gender cl">
+      <view class="joinName lf">年龄</view>
+      <view class="joinValue lf">{{joinArr[1][info2].checked?joinArr[1][info2].value:'请选择'}}</view>
+      <view class="joinLogo ri">
+        <image src="/img/taskDetailsImg/go1.png"></image>
+      </view>
+
+    </view>
+    <view id="select3" bindtap='clickJoin' class="gender cl">
+      <view class="joinName lf">工作经验</view>
+      <view class="joinValue lf">{{joinArr[2][info3].checked?joinArr[2][info3].value:'请选择'}}</view>
+      <view class="joinLogo ri">
+        <image src="/img/taskDetailsImg/go1.png"></image>
+      </view>
+
+    </view>
+    <view id="select4" bindtap='clickJoin' class="gender cl">
+      <view class="joinName lf">语言</view>
+      <view class="joinValue lf">{{joinArr[3][info4].checked?joinArr[3][info4].value:'请选择'}}</view>
+      <view class="joinLogo ri">
+        <image src="/img/taskDetailsImg/go1.png"></image>
+
+      </view>
+    </view>
+
+  </view>
+</view>
+<view class="joinCommit send">发送</view>
+<view class="sxBody " hidden='{{joinSelectShow}}' catchtap='filterZp'> </view>
+<view class="joinSelect" hidden='{{joinSelectShow}}' style="height:{{printArr.length>2?490:400}}rpx">
+  <view wx:for="{{printArr}}" catchtap='selectItem' class="joinSelectValue {{strShow==index?'strshow':''}}" data-value="{{index}}">{{item.value}}</view>
+
+  <view class="joinCommit" catchtap='JoinCommit'>确定</view>
+</view>

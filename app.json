@@ -8,6 +8,7 @@
     "pages/taskDetails/taskCommit/taskCommit",
     "pages/index/DaySettlement/Settlement",
     "pages/taskHand/taskHand",
+    "pages/taskHand/joinDetails/joinDetaila",
     "pages/index/LongTimeTaskHand/LongTimeTaskHand",
     "pages/index/fragmentTime/fragmentTime",
     "pages/index/campusInternship/campusInternship",
@@ -23,10 +24,12 @@
     "pages/my/myApplyType/myApplyType",
     "pages/my/myResume/myResume",
     "pages/my/myWallet/securitySetting/securitySetting",
-     "pages/test/test",
-     "pages/test/picker/picker",
-     "pages/my/certification/certification",
-     "pages/my/JobWanted/JobWanted"
+    "pages/test/test",
+    "pages/test/picker/picker",
+    "pages/my/certification/certification",
+    "pages/my/certification/searchSchool/searchSchool",
+    "pages/my/JobWanted/JobWanted",
+    "pages/nearbyMerchants/nearbyMerchants"
      
   ],
   "window":{
@@ -41,8 +44,8 @@
     "borderStyle": "white",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页",
+      "pagePath": "pages/index/index",
+      "text": "首页",
       "iconPath": "/img/底部导航-灰.png",
       "selectedIconPath": "/img/底部导航-黄.png"
       },

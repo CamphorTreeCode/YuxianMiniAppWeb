@@ -1912,7 +1912,7 @@
   font-size: .85rem;
   font-weight: normal;
   line-height: 88rpx;
-  color: #3d4145;
+  color:#82807F;
   text-align: center;
   white-space: nowrap;
 }
@@ -1920,7 +1920,7 @@
   position: absolute;
   height: 88rpx;
   line-height: 88rpx;
-  color: #586c94;
+  color: #FFD95E;
   z-index: 1;
   padding: 0 .5rem;
   box-sizing: border-box;

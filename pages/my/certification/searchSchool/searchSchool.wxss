@@ -1,0 +1,49 @@
+/* pages/my/certification/searchSchool/searchSchool.wxss */
+.search{
+  border: 1rpx solid #F0F0F0;
+  height: 100rpx;
+  background:#F0F0F0;
+}
+.searchInput{
+border-radius:3%;
+ height: 70rpx;
+ width: 90%;
+ margin:0 auto;
+ margin-top: 17rpx;
+ background: #fff;
+
+}
+.searchInputBody{
+width: 100%;
+margin-top: 10rpx;
+height: 60rpx;
+padding-top:5rpx;
+
+}
+.searchInput input{
+
+   height: 60rpx;
+    margin: 0 auto;
+
+ width: 95%;
+
+}
+.placehoCss{
+
+}
+.placeholderBody{
+  margin-left: 3%;
+  margin-top:3%;
+  width: 50%;
+
+}
+.placeholderTitle{
+  font-size: .97rem;
+   color: #4E4E4E;
+}
+
+.placeholderDetails{
+  margin-top:3%;
+  font-size: 0.7rem;
+  color: #808080;
+}

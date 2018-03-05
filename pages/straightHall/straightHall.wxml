@@ -1,4 +1,5 @@
 <!--pages/straightHall/straightHall.wxml-->
+
 <view class="select cl">
   <view id="allType" class="AllType {{shownavindex == 1? 'active' : ''}} lf" bindtap='allType' data-nav="1">{{allType}}
     <view class="icon"></view>

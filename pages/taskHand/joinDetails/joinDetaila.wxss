@@ -1,0 +1,97 @@
+/* pages/taskHand/joinDetails/joinDetaila.wxss */
+page{
+  background: #ECECEC;
+}
+.joinMarginTOp{
+  height:400rpx;
+  border: 1rpx solid transparent;
+}
+.joinBody{
+margin-top: 4%;
+}
+.gender{
+  height: 90rpx;
+  border-bottom: 4rpx solid #ECECEC;
+  background: #fff;
+}
+.joinName{
+  line-height: 90rpx;
+  width: 25%;
+  margin-left:3%;
+  color:#757575;
+  font-size: 0.95rem;
+
+}
+.joinValue{
+  line-height: 90rpx;
+  width: 40%;
+  color:#757575;
+  font-size: 0.95rem;
+  margin-left:8%;
+}
+.joinCommit{
+
+}
+
+.joinLogo{
+width:8%;
+height:100%;
+
+
+
+}
+.joinLogo image{
+width:70%;
+height:48%;
+margin-top:37%;
+margin-left:15%;
+
+
+
+
+}
+.joinSelect{
+    height: 400rpx;
+  width: 90%;
+  position: fixed;
+  z-index: 10002;
+  left: 5%;
+  top: 25%;
+  background: #fff;
+  padding-top:1%;
+}
+.joinSelectValue{
+  text-align: center;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #E2E2E0;
+  color:#757575;
+  width: 98%;
+  margin: 0 auto;
+
+}
+.joinCommit{
+   width: 85%;
+   background: #FFD95E;
+   color: #fff;
+   line-height: 100rpx;
+   margin: 0 auto;
+   text-align: center;
+   margin-top: 8%;
+}
+.sxBody{
+    position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom:0;
+  background: rgba(0, 0, 0, 0.5);
+    animation: fadeIn ease 0.7s forwards;
+}
+.send{
+  width: 100%;
+}
+.strshow{
+  background: #FFD95E;
+  color: #fff;
+}

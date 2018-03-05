@@ -89,7 +89,7 @@
 
 </view>
 <view class="taskContentText">
-   <template is="wxParse" data="{{wxParseData:article.nodes}}" /> 
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
   <view class="bottomPrompt">
     <view class="Reminder">
       <view class="ReminderContent">
@@ -105,14 +105,14 @@
       </view>
       <view class="userHeadLogo">
         <view class="userHeadLogoImg lf" wx:for="{{headImg}}">
-         <image src="{{item}}"></image>
+          <image src="{{item}}"></image>
         </view>
-              <view class="userHeadLogoImg lf" >
-            <view class="more">
+        <view class="userHeadLogoImg lf">
+          <view class="more">
             <view class="moreLine lineOne lf"></view>
             <view class="moreLine lf"></view>
             <view class="moreLine lf"></view>
-            </view>
+          </view>
         </view>
       </view>
     </view>
@@ -121,11 +121,69 @@
 
 <view class="menuTask lf">
   <view class="TaskCommit lf" bindtap='taskCommit'>
-  <view class="joinLogo">
-  <image src="/img/taskDetailsImg/join.png"></image></view></view>
+    <view class="joinLogo">
+      <image src="/img/taskDetailsImg/join.png"></image>
+    </view>
+  </view>
   <view bindtap='shareTask'>
     <button class="shareTask ri" open-type="share">
       分享
     </button>
+  </view>
+</view>
+
+<!--报名时间 start -->
+
+<view class="flex box box-tb box-align-center bodyBack" hidden='{{showTime}}' catchtap='hiddenTime' mask="false">
+  <view class="calendar pink-color box box-tb topback " catchtap='hi'>
+    <!--title  -->
+    <view class="timeTitleAll">
+      <view class="timeTitle lf">添加工作时间</view>
+      <view class="selectNumberTitle ri">
+        今日还可报名{{joninNumber}}次
+      </view>
+
+    </view>
+    <!--一周的头部天数  -->
+    <view class="weeks box box-lr box-pack-center box-align-center">
+      <view class="flex week fs28" wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+    </view>
+    <!--一个月的天数  -->
+
+    <scroll-view scroll-y style="height:470rpx" scroll-into-view="{{toView}}">
+      <view wx:for="{{dayss}}" wx:key="{{indexs}}" wx:for-index="idx" wx:for-item="item">
+        <view class="daytimesTitle">{{dayss[idx][0].cur_year}}-{{dayss[idx][0].cur_month}}</view>
+        <view class="days box box-lr box-wrap">
+
+          <!-- 空的天数  -->
+          <view wx:if="{{dayss[idx][1].hasEmptyGrid}}" class="gridss white-color box box-align-center box-pack-center " wx:for="{{dayss[idx][1].empytGrids}}" wx:key="{{index}}" data-idx="{{index}}">
+          </view>
+          <!--实际天数  -->
+          <view class="gridss white-color box box-align-center box-pack-center " wx:for="{{dayss[idx][2].days}}" wx:key="{{inde}}" data-idx="{{index}}" data-tidx="{{idx}}" catchtap="tapDayItem">
+            <view class="day {{item.choosed ?(item.daySign? 'border-radius pink-bg' : 'border-radius huise-bg'):''}} {{item.endTime?'endTimes':''}} box box-align-center box-pack-center">
+              <view class="yday">{{item.day}}</view>
+            </view>
+
+            <view class="tip box box-align-center box-pack-center" style="background:{{item.daySign?'#F97313':'#fff'}}"></view>
+
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+
+
+    <view class="buttonCommit">
+      <view class="prompt lf">
+        <view class="timeNotes">
+        <view class=" tipsBody lf"> 
+          <view class="tips " style="background:#F97313; " ></view>
+          </view>
+          <view class="timeNotesValue lf">橘黄色标记为可选工作时间</view>
+        </view>
+        <view class="selectShowTime cl">{{joinWrokTime?joinWrokTime:'请选择工作日期'}}</view>
+      </view>
+      <view class="confirm ri" catchtap="confirmTime">确定</view>
+
+    </view>
   </view>
 </view>

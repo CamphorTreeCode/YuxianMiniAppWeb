@@ -23,6 +23,26 @@ App({
     var that = this;
     var socketOpen = false
     var socketMsgQueue = []
+
+
+    wx.login({
+      success: function (res) {
+        console.log(res)
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wx7264118368e9a2b4&secret=d3f6d343efcf266eb15a01e578d4f45d&js_code=' + res.code+'&grant_type=authorization_code',
+            success: function (res) {
+              console.log(res)
+            }  
+            
+          })
+        } else {
+          console.log('获取用户登录态失败！' + res.errMsg)
+        }
+      }
+    });
+
     // 定义省份城市
   //打开websocket
     // wx.connectSocket({

@@ -1,0 +1,16 @@
+<!--pages/my/certification/searchSchool/searchSchool.wxml-->
+<view class='search'>
+<view class="searchInput">
+ <view class="searchInputBody">
+          <input placeholder='请输入学校名称' placeholder-class='placehoCss'></input>
+          </view>
+          </view>
+</view>
+
+<view class="placeholderBody">
+  <view class="placeholderTitle">请输入学校匹配
+  </view>
+  <view class="placeholderDetails">
+  注：仅匹配前20条，请尽量详细输入支持两位以上中文搜索
+  </view>
+</view>

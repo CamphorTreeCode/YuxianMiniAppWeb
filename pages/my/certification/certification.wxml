@@ -73,8 +73,14 @@
     <view class="InputBody">
       <view class="maxInputLableName lf">
         <view class="LableTtile">上传证件照</view>
+           <view class="imgs lf" wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+      <image class="previewImg " src="{{item}}" data-index="{{index}}" mode="scaleToFill" bindtap="previewImg"></image>
+      <view class="delete-btn" data-index="{{index}}" catchtap="deleteImg">
+        <image src="/img/taskDetailsImg/deleteImg.png"></image>
+      </view>
+    </view>
         <view class="LableIoce">
-          <image class="simg" bindtap='chooseImg' src="/img/taskDetailsImg/sendImg.png"></image>
+          <image class="simg" hidden='{{imgs.length>0?true:false}}'  bindtap="chooseImg" src="/img/taskDetailsImg/sendImg.png"></image>
         </view>
       </view>
       <view class="maxInputValue lf">
