@@ -14,7 +14,7 @@
         <swiper-item wx:for="{{[0,1,2,3,4,5,6,7,8,9]}}">
             <scroll-view scroll-y="true" class="scoll-h" >
                 <block wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key="*this">
-                    <view class="item-ans">
+                    <view class="item-ans" catchtap='jumpNear'>
                         <view class="expertInfo">
                          <view class="storeBody">
                             <view class="storeName lf">荣盛时尚KTV（松江店）</view>

@@ -6,7 +6,7 @@
   <view class="taskPriceLogo lf">
     <image src="/img/taskDetailsImg/taskPriceLogo.png"></image>
   </view>
-  <view class="price lf">¥ 0.8</view>
+  <view class="price lf">¥ 58元起</view>
   <view class="SurplusNumber ri">剩余量：147</view>
 </view>
 <view class="taskDetailsList">
@@ -16,7 +16,7 @@
         <image src="/img/taskDetailsImg/other.png"></image>
       </view>
       <view class="taskdetailsListItemText textTop lf">
-        其他
+        KTV
       </view>
 
     </view>
@@ -26,7 +26,7 @@
         <image src="/img/taskDetailsImg/address.png"></image>
       </view>
       <view class="taskdetailsListItemText textTop lf">
-        全国
+        松江
       </view>
 
     </view>
@@ -37,7 +37,7 @@
         <image src="/img/taskDetailsImg/time.png"></image>
       </view>
       <view class="taskdetailsListItemText textBottom lf">
-        24小时内审核
+        9:00-24:00
       </view>
 
     </view>
@@ -47,7 +47,7 @@
         <image src="/img/taskDetailsImg/createTime.png"></image>
       </view>
       <view class="taskdetailsListItemText textBottom lf">
-        2016-9-29
+        2018-3-3
       </view>
 
     </view>
@@ -104,3 +104,12 @@
         </view>
       </view>
     </view>
+
+    <view class="menuTask lf">
+  <view class="TaskCommit lf" bindtap='taskCommit'>任务提交</view>
+  <view bindtap='shareTask'>
+    <button class="shareTask ri" open-type="share">
+      分享
+    </button>
+  </view>
+</view>

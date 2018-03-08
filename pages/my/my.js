@@ -1,4 +1,5 @@
 // pages/my/my.js
+//var WXBizDataCrypt = require('../../utils/RdWXBizDataCrypt')
 Page({
 
   /**
@@ -17,6 +18,33 @@ Page({
     var that =this
     wx.getUserInfo({
       success: function (res) {
+        console.log(res)
+        // test测试解压
+        var appId = 'wx7264118368e9a2b4'     
+        var encryptedData = res.encryptedData
+        var iv = res.iv
+     
+        // wx.login({
+        //   success: function (res) {
+        //     console.log(res)
+        //     if (res.code) {
+        //       //发起网络请求
+        //       wx.request({
+        //         url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wx7264118368e9a2b4&secret=d3f6d343efcf266eb15a01e578d4f45d&js_code=' + res.code + '&grant_type=authorization_code',
+        //         success: function (res) {
+        //           console.log(res)
+        //           var sessionKey = res.data.session_key
+        //           var pc = new WXBizDataCrypt(appId, sessionKey)
+        //           var data = pc.decryptData(encryptedData, iv)
+        //           console.log('解密后 data: ', data)
+        //         }
+
+        //       })
+        //     } else {
+        //       console.log('获取用户登录态失败！' + res.errMsg)
+        //     }
+        //   }
+        // });
         var userInfo = res.userInfo
         var nickName = userInfo.nickName
         var avatarUrl = userInfo.avatarUrl

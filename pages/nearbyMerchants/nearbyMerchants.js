@@ -6,10 +6,8 @@ Page({
    */
   data: {
     salaryList: ["所有行业", "教育培训", "娱乐休闲", "运动健身", "餐馆酒店", "超市百货",  "酒店宾馆", "美容美发", "珠宝饰品", "其他"],
- 
     currentTab: 0, //预设当前项的值
     scrollLeft: 0, //tab标题的滚动条位置
-
   },
 
   /**
@@ -101,4 +99,9 @@ Page({
       })
     }
   },
+  jumpNear(){
+ wx.navigateTo({
+   url: '/pages/nearbyMerchants/merchantsDetails/merchantsDetails',
+ })
+  }
 })
