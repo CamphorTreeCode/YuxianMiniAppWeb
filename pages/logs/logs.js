@@ -1,4 +1,4 @@
-var cityData = require('../../utils/city.js');
+﻿var cityData = require('../../utils/city.js');
 var QQMapWX = require('../../utils/qqmap-wx-jssdk.js');
 var check = require('../../utils/authorizationCheck.js');
 var loginStatus = true;
@@ -11,7 +11,7 @@ Page({
     endcitys: [],
     //用户选择省份之后对应的城市和县城
     endkeys: {},
-    //用户选择县城
+    //用户选择县城  
     town: [],
     //所有车长
     commanders: cityData.getcommanders(),
